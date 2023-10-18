@@ -11,17 +11,20 @@
 <body>
     <header>
         <div class="header-font">
-            <img src="/assets-images/logo.png" title="Logo de l'entreprise Sanderolls" alt="Logo de l'entreprise Sanderolls">
+            <img class="logo" src="/assets-images/logo.png" title="Logo de l'entreprise Sanderolls" alt="Logo de l'entreprise Sanderolls">
         </div>
         <div>
-            <button class="login-button">Connexion</button>
-            <button class="register-button">Inscription</button>
-            <button class="panier">Panier</button>
+            <button class="login-button">
+                <img src="/assets-images/icons/account cnx.svg" title="Logo connexion" alt="Logo connexion">
+            </button>
+            <button class="panier">
+                <img src="/assets-images/icons/panier.svg" title="Logo panier" alt="Logo panier"> 
+            </button>
         </div>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li class="dropdown">
                 <a href="#">Financement</a>
                 <ul class="dropdown-content">
@@ -35,8 +38,9 @@
               <a href="#">Marques</a>
               <ul class="dropdown-content">
                 <li><a href="#">BMW</a></li>
-                <li><a href="#">ROLLS ROYCE</a></li>
-                <li><a href="#">DACIA</a></li>
+                <li><a href="#">Mercedes</a></li>
+                <li><a href="#">Rolls Royce</a></li>
+                <li><a href="#">Dacia</a></li>
               </ul>
             </li>  
             <li><a href="#">Nouveautés</a></li>
@@ -51,24 +55,29 @@
             <button>Rechercher</button>
         </div>
         <div class="carousel-container">
-            <div class="slide">
-                <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (front view).jpg" alt="Image 1">
+            <div class="slides">
+                <div class="slide">
+                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (front view).jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/bmw X3 M (backview).jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (inside2).jpg" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 5">
+                </div>
             </div>
-            <div class="slide">
-                <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/bmw X3 M (backview).jpg" alt="Image 2">
-            </div>
-            <div class="slide">
-                <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 3">
-            </div>
-            <div class="slide">
-                <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (inside2).jpg" alt="Image 4">
-            </div>
-            <div class="slide">
-                <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 5">
-            </div>
+            <button class="prev-button" onclick="changeSlide(-1)">❮</button>
+            <button class="next-button" onclick="changeSlide(1)">❯</button>
         </div>
         <section>
             <h2>Liste des Produits :</h2>
+            <p><a href="/Marques/BMW/BMW-M3.html" title="BMW M3">BMW M3</a></p>
             <p>Mettre des div pour les voitures</p>
         </section>
         <section>
@@ -115,6 +124,7 @@
         </div>
         <div>
             <p># Copyright</p>
+            <p>Walid, Philippe, Robin</p>
         </div>
     </footer>
 </body>
