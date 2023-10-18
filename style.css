@@ -1,0 +1,178 @@
+main{
+    background-color: beige;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: linear-gradient(90deg, #010749, #2e6abf);
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  
+  nav li {
+    position: relative;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+    border-bottom: 3px rgb(0, 179, 255) solid;
+  }
+  
+  /* Style du menu déroulant */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dropdown-content li {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .search-menu {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  
+  .search-menu input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-menu button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    background-color: #ccc;
+    color: #fff;
+  }
+  
+  header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /* Style pour le bouton au survol */
+  .search-menu button:hover {
+    background-color: #555;
+    cursor: pointer;
+  }
+  .login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    cursor: pointer;
+    margin-right: 10px; /* Marge à droite pour l'espacement */
+  }
+  
+  .login-button:hover {
+    background-color: #2980b9; /* Couleur de fond au survol */
+  }
+  .panier {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0c903; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    cursor: pointer;
+    margin-right: 10px; /* Marge à droite pour l'espacement */
+  }
+  
+  .panier:hover {
+    background-color: #f0c803cf; /* Couleur de fond au survol */
+  }
+  /* Styles pour le bouton d'inscription */
+  .register-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Bordure */
+    border-radius: 5px;
+    background-color: #fff; /* Couleur de fond */
+    color: #3498db; /* Couleur du texte */
+    cursor: pointer;
+    margin-right: 10px; /* Marge à droite pour l'espacement */
+
+  }
+  
+  .register-button:hover {
+    background-color: #3498db; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+  }
+
+body {
+    scroll-padding: 10px; /* Ajustez la valeur en fonction de votre préférence */
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; /* Ajoute un défilement fluide */
+}
+  
+.slide {
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+  
+main img {
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    color: white;
+    padding: 2rem;
+    background: linear-gradient(90deg, #010749, #2e6abf);
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
