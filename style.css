@@ -1,0 +1,219 @@
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #010749, #2e6abf);
+}
+
+/* Style de la navigation*/
+nav {
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    z-index: 1;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    z-index: 1;
+
+}
+nav li {
+    position: relative;
+    z-index: 1;
+
+} 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    z-index: 1;
+
+}
+nav a:hover {
+    background-color: #555;
+    border-bottom: 3px rgb(0, 179, 255) solid;
+    z-index: 1;
+
+}
+  
+/* Style du menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.dropdown-content li {
+    display: block;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.search-menu {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.search-menu input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+.search-menu button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    background-color: #ccc;
+    color: #fff;
+}  
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+  /* Style pour le bouton au survol */
+.search-menu button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; 
+    color: #fff; 
+    cursor: pointer;
+    margin: 10px; 
+}
+.login-button:hover {
+    background-color: #2980b9; 
+}
+.panier {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0c903; 
+    color: #fff; 
+    cursor: pointer;
+    margin: 10px; 
+}
+  
+.panier:hover {
+    background-color: #f0c803cf; 
+}
+
+
+main{
+    background-image: url(/assets-images/fonds/fond_index.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+body {
+    scroll-padding: 10px; 
+}
+/* Styles pour le carousel d'images */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+  
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.slide {
+    min-width: 100%;
+}
+  
+img {
+    width: 100%;
+    height: auto;
+}
+  
+.prev-button, .next-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+}
+  
+.prev-button {
+    position: absolute;
+    left: 10px;
+}
+  
+.next-button {
+    position: absolute;
+    right: 10px;
+}
+
+/* Mise en forme du footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 2rem;
+    background: linear-gradient(90deg, #010749, #2e6abf);
+    border-top: 2px solid black;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+/* Mise en forme des images des réseaux sociaux */
+.social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+}
+.social1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.social img {
+    padding: 5px;
+    height: 40px;
+}
+.social img:hover{
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 1100px){
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
