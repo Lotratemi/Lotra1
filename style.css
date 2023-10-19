@@ -1,11 +1,70 @@
-
+body{
+    cursor: url(/assets-images/icons/icons8-voiture-50.png), auto;
+}
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(90deg, #010749, #2e6abf);
 }
+.logo{
+    height: 120px;
+}
+.search-menu {
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    max-width: 300px;
+    margin: 20px auto;
+}
 
+.search-menu input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-menu button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    background-color: #ccc;
+    color: #fff;
+}  
+
+/* Style pour le bouton au survol */
+.search-menu button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; 
+    color: #fff; 
+    cursor: pointer;
+    margin: 10px; 
+}
+.login-button:hover {
+    background-color: #2980b9; 
+}
+.panier {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0c903; 
+    color: #fff; 
+    cursor: pointer;
+    margin: 10px; 
+}
+  
+.panier:hover {
+    background-color: #f0c803cf; 
+}
 /* Style de la navigation*/
 nav {
     background-color: #333;
@@ -58,114 +117,71 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.search-menu {
-    display: flex;
-    align-items: center;
-    max-width: 300px;
-    margin: 20px auto;
-}
-
-.search-menu input {
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-}
-.search-menu button {
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 0 5px 5px 0;
-    background-color: #ccc;
-    color: #fff;
-}  
-header div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-  /* Style pour le bouton au survol */
-.search-menu button:hover {
-    background-color: #555;
-    cursor: pointer;
-}
-.login-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3498db; 
-    color: #fff; 
-    cursor: pointer;
-    margin: 10px; 
-}
-.login-button:hover {
-    background-color: #2980b9; 
-}
-.panier {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f0c903; 
-    color: #fff; 
-    cursor: pointer;
-    margin: 10px; 
-}
-  
-.panier:hover {
-    background-color: #f0c803cf; 
-}
 
 
 main{
     background-image: url(/assets-images/fonds/fond_index.jpg);
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+
 }
-body {
-    scroll-padding: 10px; 
+section{
+    margin-left: 40%;
+    background-color:  rgb(235, 235, 162);
+    width: 22%;
+}
+.section-top{
+    margin-top: 3vh;
+}
+.section-bottom{
+    margin-bottom: 3vh;
 }
 /* Styles pour le carousel d'images */
-.carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
+.body-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 45vh;
+    margin-top: 5vh;
 }
-  
+
+.carousel {
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
 .slides {
     display: flex;
-    transition: transform 0.3s ease-in-out;
 }
-  
+
 .slide {
-    min-width: 100%;
+    display: none;
 }
-  
-img {
+
+.slide img {
     width: 100%;
-    height: auto;
 }
-  
-.prev-button, .next-button {
-    background: none;
-    border: none;
+
+.body-carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 24px;
     cursor: pointer;
-    padding: 10px;
-    outline: none;
+    border: none;
+    background: none;
 }
-  
-.prev-button {
-    position: absolute;
-    left: 10px;
+
+#prevBtn {
+    left: 0;
 }
-  
-.next-button {
-    position: absolute;
-    right: 10px;
+
+#nextBtn {
+    right: 0;
 }
 
 /* Mise en forme du footer */
