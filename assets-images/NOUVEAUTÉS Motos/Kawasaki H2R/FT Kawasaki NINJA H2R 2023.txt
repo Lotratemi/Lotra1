@@ -1,0 +1,46 @@
+    Fiche technique
+    Kawasaki NINJA H2R 2022
+
+    Châssis
+    Cadre : périmétrique en tubes acier
+    Réservoir : 17 litres
+    Hauteur de selle : 830 mm
+    Longueur : 2 070 mm
+    Largeur : 850 mm
+    Hauteur min : 1 160 mm
+    Empattement : 1 450 mm
+    Poids en ordre de marche : 216 kg
+
+    Train avant
+    Fourche téléhydraulique inversée Ø 43 mm,          déb : 120 mm
+    2 disques Ø 330 mm, étriers radiaux Brembo 4 pistons
+    Roue AV : 120 / 600R - 17 → Commander ce type de pneu
+    Pression : 2.2 bars
+
+
+    Transmission
+    boîte à 6 rapports , manuelle - shifter de série
+    secondaire par chaîne
+
+    Train arrière
+    Mono-amortisseur Öhlins TTX36 et monobras, déb : 135 mm
+    1 disque Ø 250 mm, étrier 2 pistons
+    Roue AR : 190 / 650R - 17 → Commander ce type de pneu
+    Pression : 2.6 bars
+
+    Moteur
+    4 Cylindres en ligne , 4 temps
+    Refroidissement : liquide
+    Injection Ø 50 mm + compresseur
+    2 ACT
+    4 soupapes par cylindre
+    998 cc (76 x 55 mm)
+    310 ch à 14 000 tr/min
+    326 ch avec l'air forcé
+    16,80 mkg à 12 500 tr/min
+    Rapport poids / puissance : environ 0,65 kg/ch
+    Compression : 8.3 : 1
+    Crit'air :
+
+    Options / équipements
+    Assistance au freinage : ABS de série
