@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANDÉROLLS</title>
+    <title>Document</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="apropos.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="/index.html">Accueil</a></li>
             <li class="dropdown">
                 <a href="#">Financement</a>
                 <ul class="dropdown-content">
@@ -54,40 +55,28 @@
         </ul>
     </nav>
     <main>
-        <section class="section-top">
-            <div class="body-carousel">
-                <div class="carousel"> 
-                    <button id="prevBtn" onclick="prevSlide()">❮</button>  
-                    <div class="slides"></div>
-                        <div class="slide">
-                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (front view).jpg" alt="Image 1">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/bmw X3 M (backview).jpg" alt="Image 2">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 3">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (inside2).jpg" alt="Image 4">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 5">
-                        </div>
-                    <div class="slides"></div>             
-                    <button id="nextBtn" onclick="nextSlide()">❯</button>
+        <div class="apropos">
+            <div class="aproposdivimg">
+                <img src="assets-images/logo.jpg" title="Logo entreprise" alt="Logo entreprise">  
+            </div>
+            <div class="aproposdiv">
+            <h3>À Propos:</h3> 
+            <p>Le site « SandéRolls.fr » est édité par :</p>
+            <p>SandéRolls s.a.s, société par actions simplifiée fondée par un trio de start upper Walid, Philippe et Robin, 
+                au capital de 3.941.113 euros, 
+                dont le siège social est situé au 1 Rue de Tilsitt, 75008 Paris, 
+                immatriculée au R.C.S. de Paris sous le numéro 780 129 987,</p>
+            <p>Directeur de la publication : Walid BEN AISSA</p>
+            <p>Hébergeur sandérolls.fr : AMAZON WEB SERVICES Inc.</p>
+            </div>
+            <div class="aproposdiv">
+                <p><strong>Téléphone:</strong> 09 09 99 10 99</p>
+                <p><strong>Adresse:</strong> 1 Rue de Tilsitt, 75008 Paris</p>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.1822263560224!2d2.2960487914068817!3d48.87327788770683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66febb8e4bed1%3A0x6e235fe4410ea468!2sAmbassade%20du%20Qatar!5e0!3m2!1sfr!2sfr!4v1697713138509!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </section>
-        <section>
-            <h2>Liste des Produits :</h2>
-            <p><a href="Marques/BMW/BMW-M3.html" title="BMW M3">BMW M3</a></p>
-            <p>Mettre des div pour les voitures</p>
-        </section>
-        <section class="section-bottom">
-            <h2>Vous pourriez aussi aimer :</h2>
-            <p>Mettre des div avec des articles auto</p>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="infos-entreprises">
@@ -134,7 +123,7 @@
             &copy; Walid, Philippe, Robin   
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

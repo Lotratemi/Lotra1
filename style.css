@@ -1,5 +1,5 @@
 body{
-    cursor: url(/assets-images/icons/icons8-voiture-50.png), auto;
+    cursor: url(/assets-images/icons/icons8-voiture-30b.png), auto;
 }
 header{
     display: flex;
@@ -8,7 +8,7 @@ header{
     background: linear-gradient(90deg, #010749, #2e6abf);
 }
 .logo{
-    height: 120px;
+    height: 8rem;
 }
 .search-menu {
     display: flex;
