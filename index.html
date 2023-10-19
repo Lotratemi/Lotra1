@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <header>
+    <header >
         <div class="header-font">
-            <img class="logo" src="/assets-images/logo.png" title="Logo de l'entreprise Sanderolls" alt="Logo de l'entreprise Sanderolls">
+            <img class="logo" src="/assets-images/logo.jpg" title="Logo de l'entreprise Sanderolls" alt="Logo de l'entreprise Sanderolls">
+        </div>
+        <div class="search-menu">
+            <input type="text" placeholder="Rechercher...">
+            <button>Rechercher</button>
         </div>
         <div>
             <button class="login-button">
@@ -46,45 +50,42 @@
             <li><a href="#">Nouveautés</a></li>
             <li><a href="#">Bons plans</a></li>
         </ul>
-
     </nav>
-
     <main>
-        <div class="search-menu">
-            <input type="text" placeholder="Rechercher...">
-            <button>Rechercher</button>
-        </div>
-        <div class="carousel-container">
-            <div class="slides">
-                <div class="slide">
-                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (front view).jpg" alt="Image 1">
-                </div>
-                <div class="slide">
-                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/bmw X3 M (backview).jpg" alt="Image 2">
-                </div>
-                <div class="slide">
-                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 3">
-                </div>
-                <div class="slide">
-                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (inside2).jpg" alt="Image 4">
-                </div>
-                <div class="slide">
-                    <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 5">
+        <section class="section-top">
+            <div class="body-carousel">
+                <div class="carousel"> 
+                    <button id="prevBtn" onclick="prevSlide()">❮</button>  
+                    <div class="slides"></div>
+                        <div class="slide">
+                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (front view).jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/bmw X3 M (backview).jpg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M (inside2).jpg" alt="Image 4">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/BMW/4x4/BMW X3 M competition 510ch/BMW X3 M Competition 510ch(inside).jpg" alt="Image 5">
+                        </div>
+                    <div class="slides"></div>             
+                    <button id="nextBtn" onclick="nextSlide()">❯</button>
                 </div>
             </div>
-            <button class="prev-button" onclick="changeSlide(-1)">❮</button>
-            <button class="next-button" onclick="changeSlide(1)">❯</button>
-        </div>
-        <section>
-            <h2>Liste des Produits :</h2>
-            <p><a href="/Marques/BMW/BMW-M3.html" title="BMW M3">BMW M3</a></p>
-            <p>Mettre des div pour les voitures</p>
         </section>
         <section>
+            <h2>Liste des Produits :</h2>
+            <p><a href="Marques/BMW/BMW-M3.html" title="BMW M3">BMW M3</a></p>
+            <p>Mettre des div pour les voitures</p>
+        </section>
+        <section class="section-bottom">
             <h2>Vous pourriez aussi aimer :</h2>
             <p>Mettre des div avec des articles auto</p>
         </section>
-
     </main>
     <footer>
         <div>
@@ -120,15 +121,14 @@
             </div>
             <div>
                 <a href="https://www.linkedin.com/"><img src="/assets-images/icons/linkedin.svg" title="Logo LinkedIn" alt="Logo LinkedIn"></a>
-            </div>   
+             </div>   
         </div>
         <div>
             <p># Copyright</p>
             <p>Walid, Philippe, Robin</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-
-
 
 </html>
