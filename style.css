@@ -202,6 +202,13 @@ footer a:hover{
 }
 
 
+.infos-entreprises{
+    display: flex;
+    flex-direction: column;
+}
+.infos-entreprises a {
+    padding: 2px;
+}
 /* Mise en forme des images des réseaux sociaux */
 .social{
     display: grid;
