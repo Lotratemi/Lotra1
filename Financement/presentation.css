@@ -11,24 +11,29 @@ body {
 
 .container {
     text-align: center;
+    justify-content: space around;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .grid-container {
     display: grid;
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 40px;
     text-align: center;
+    justify-content: space-around;
+    grid-gap: 50px;
 }
 
 .column {
+    display: grid
     padding: 20px;
     background-color: white;
+    justify-content: space-around;
     border: 1px black;
     border-radius: 10px;
-    /*box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5); */
     box-shadow: 4px 4px 10px rgba(226, 224, 224, 0.625);
-
-    /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
 }
 
 .box {
@@ -42,39 +47,16 @@ body {
     justify-content: center;
   }
 
-
 .image-list {
-    list-style: none;
+    list-style-type: none; /* Supprimez les puces par défaut */
     padding: 0;
 }
 
 .image-list li {
     margin-bottom: 10px;
-}
-
-.image-list img {
-    width: 20px; /* Ajustez la taille de l'image selon vos besoins */
-    margin-right: 10px;
-    text-align: left;
-}
-
-
-.icon-list {
-    list-style: none;
-    padding: 0;
-}
-
-.icon-list img {
-    margin-bottom: 10px;
-    display: flex; /* Utilisez flexbox pour aligner l'icône et le texte */
-    align-items: center; /* Alignez verticalement les éléments de la liste */
-    width: 20px; /* Ajustez la taille de l'image selon vos besoins */
-}
-
-.icon-list img {
-    margin-right: 10px; /* Espacement entre l'icône et le texte */
-}
-
-.icon-list img, .icon-list li {
-    text-align: left; /* Alignez le texte et l'icône à gauche */
+    padding-left: 20px; /* Ajoutez de l'espace à gauche de chaque élément de la liste pour que la "puce" ait la place de s'afficher */
+    background-image: url('/assets-images/icons/tick.png'); /* Utilisez votre image de puce */
+    background-size: 16px 16px; /* Ajustez la taille de l'image de puce selon vos besoins */
+    background-repeat: no-repeat;
+    text-align: left; /* l'image de la coche (ou tick) n est pas répétée (ne s'affiche qu'une seule fois) */
 }
