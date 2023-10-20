@@ -128,15 +128,74 @@ main{
 
 }
 section{
-    margin-left: 40%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 33%;
     background-color:  rgb(235, 235, 162);
-    width: 22%;
+    width: 33%;
+}
+section h2{
+    background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
+    color: white;
+    text-align: center;
 }
 .section-top{
     margin-top: 3vh;
 }
 .section-bottom{
     margin-bottom: 3vh;
+}
+
+.logo1{
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgb(235, 235, 193);
+    border-radius: 10px;
+    align-items: center;
+}
+.logo1 div{
+    width: 6rem;
+}
+.logo1 img{
+    width: 5rem;
+    padding: 0.5rem;
+}
+.logo1 img:hover{
+    opacity: 0.7;
+    width: 5.5rem;
+}
+.logo2 {
+    display: flex;
+    justify-content: space-around;    
+    background-color:  rgb(235, 235, 193);
+    border-radius: 10px;
+    align-items: center;
+
+}
+.logo2 div{
+    width: 6rem;
+}
+.logo2 img{
+    width: 5rem;
+    padding: 0.5rem;
+
+}
+
+.logo3 {
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgb(235, 235, 193);
+    border-radius: 10px;
+    align-items: center;
+
+}
+.logo3 div{
+    width: 6rem;
+}
+.logo3 img{
+    width: 5rem;
+    padding: 0.5rem;
+
 }
 /* Styles pour le carousel d'images */
 .body-carousel {
