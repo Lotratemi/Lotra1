@@ -1,70 +1,173 @@
 <!DOCTYPE html>
-<html>
-<!-- 
-    <html lang="en">
--->
-
+<html lang="fr">
 <head>
-    <!--
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    -->
-    <link rel="stylesheet" type="text/css" href="presentation.css">
-    <!--
-        <link rel="stylesheet" type="text/css" href="presentation.css">
-    -->
+    <title>SANDÉROLLS</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/Financement/presentation.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Financement automobile</h1>
-        <div>Profitez de notre offre à la carte de  financement en LOA, LLD ou crédit auto en toute simplicité 
-            et bénéficiez de nos garanties pendant toute la durée de votre contrat.
+
+    <header >
+        <div class="header-font">
+            <img class="logo" src="/assets-images/logo.jpg" title="Logo de l'entreprise Sanderolls" alt="Logo de l'entreprise Sanderolls">
         </div>
-        <h1>Voici les différents types de financement possibles</h1>
-        <div class="grid-container">
-            <div class="column">LOA : Location avec Option d'Achat
-                <p>
-                    Vous êtes locataire et ne 
-                    <strong>payez que l’usage de votre véhicule.</strong>
-                     Vous 
-                     <strong>maitrisez vos loyers</strong>
-                     , composez votre financement 
-                     <strong>avec ou sans apport</strong>
-                      et vous pouvez 
-                      <strong>acheter ou restituer votre véhicule.</strong>
-                </p>
-                <ul class="icon-list">
-                    <li><img src="tick.png" alt="tick">Maitrisez vos loyers</li>
-                    <li><img src="tick.png" alt="tick">Composez votre financement avec ou sans apport</li>
-                    <li><img src="tick.png" alt="tick">Achetez ou restituez votre véhicule en fin de contrat</li>
+        <div class="search-menu">
+            <input type="text" placeholder="Rechercher...">
+            <button>Rechercher</button>
+        </div>
+        <div>
+            <button class="login-button">
+                <a href="/header/connexion.html"><img src="/assets-images/icons/account cnx.svg" title="Logo connexion" alt="Logo connexion"></a>
+            </button>
+            <button class="panier">
+                <a href="/header/panier.html"><img src="/assets-images/icons/panier.svg" title="Logo panier" alt="Logo panier"> </a>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Financement</a>
+                <ul class="dropdown-content">
+                  <li><a href="#">Présentation générale</a></li>
+                  <li><a href="#">Crédit</a></li>
+                  <li><a href="#">Location avec Option d'Achat</a></li>
+                  <li><a href="#">Location Longue Durée</a></li>
                 </ul>
-                <span class="box">Tout savoir sur la LOA</span>
+            </li> 
+            <li class="dropdown">
+              <a href="#">Marques</a>
+              <ul class="dropdown-content">
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Dacia</a></li>
+                <li><a href="#">Lamborghini</a></li>
+                <li><a href="#">Lotus</a></li>
+                <li><a href="#">Mercedes</a></li>
+                <li><a href="#">Rolls Royce</a></li>
+              </ul>
+            </li>  
+            <li><a href="#">Nouveautés</a></li>
+            <li><a href="#">Bons plans</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Financement automobile</h1>
+            <div>Profitez de notre offre à la carte de  financement en LOA, LLD ou crédit auto en toute simplicité 
+                et bénéficiez de nos garanties pendant toute la durée de votre contrat.
             </div>
-            <div class="column">Crédit Automobile
-                <p>
-                    Devenez <strong>propriétaire de votre véhicule</strong>
-                     avec ou sans apport. Vous 
-                     <strong>définissez votre apport</strong>
-                     , la durée du prêt et 
-                     <strong>modulez votre contrat</strong>
-                      en fonction de vos besoins.
-                </p>
-                <span class="box">Tout savoir sur le Crédit</span>
-            </div>
-            <div class="column">LLD : Location Longue Durée
-                <p>
-                    Vous êtes 
-                    <strong>locataire de votre véhicule.</strong>
-                     Vous 
-                    <strong>roulez dans une voiture neuve</strong>
-                    , bénéficiez de l’assistance, de la maintenance et vous 
-                    <strong>payez seulement l’usage du véhicule.</strong>
-                </p>
-                <span class="box">Tout savoir sur la LLD</span>
+            <h1>Voici les différents types de financement possibles</h1>
+            <div class="grid-container">
+                <div class="column">LOA : Location avec Option d'Achat
+                    <p>
+                        Vous êtes locataire et ne 
+                        <strong>payez que l’usage de votre véhicule.</strong>
+                        Vous 
+                        <strong>maitrisez vos loyers</strong>
+                        , composez votre financement 
+                        <strong>avec ou sans apport</strong>
+                        et vous pouvez 
+                        <strong>acheter ou restituer votre véhicule.</strong>
+                    </p>
+                    <ul class="image-list">
+                        <li><Test</li>
+                        <li>Maitrisez vos loyers</li>
+                        <li>Composez votre financement avec ou sans apport</li>
+                        <li>Achetez ou restituez votre véhicule en fin de contrat</li>
+                    </ul>
+                    <span class="box">Tout savoir sur la LOA</span>
+                </div>
+                <div class="column">Crédit Automobile
+                    <p>
+                        Devenez <strong>propriétaire de votre véhicule</strong>
+                        avec ou sans apport. Vous 
+                        <strong>définissez votre apport</strong>
+                        , la durée du prêt et 
+                        <strong>modulez votre contrat</strong>
+                        en fonction de vos besoins.
+                    </p>
+                    <ul class="image-list">
+                        <li>Devenez propriétaire de votre véhicule</li>
+                        <li>Composez votre financement avec ou sans apport</li>
+                        <li>Un crédit qui s’adapte à vos besoins</li>
+                    </ul>
+                    <br>
+                    <span class="box">Tout savoir sur le Crédit</span>
+                </div>
+                <div class="column">LLD : Location Longue Durée
+                    <p>
+                        Vous êtes 
+                        <strong>locataire de votre véhicule.</strong>
+                        Vous 
+                        <strong>roulez dans une voiture neuve</strong>
+                        , bénéficiez de l’assistance, de la maintenance et vous 
+                        <strong>payez seulement l’usage du véhicule.</strong>
+                    </p>
+                    <ul class="image-list">
+                        <li>Payez seulement l’usage du véhicule</li>
+                        <li>Roulez dans une voiture neuve et choisissez vos options</li>
+                        <li>Bénéficiez de l’assistance &amp; maintenance</li>
+                    </ul>
+
+                    <span class="box">Tout savoir sur la LLD</span>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="infos-entreprises">
+            <a href="/footer/apropos.html">À propos</a>
+            <a href="/footer/cgu.html">Conditions générales d'utilisation</a>
+            <a href="/footer/contact.html">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Newsletter</a>
+        </div>
+        <div class="social">
+            <div class="social1">
+                Suivez nous sur : 
+            </div>
+            <div>
+                <a href="https://www.facebook.com/"><img src="/assets-images/icons/facebook.svg" title="Logo Facebook" alt="Logo Facebook"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/X"><img src="/assets-images/icons/twitter.svg" title="Logo Twitter" alt="Logo Twitter"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/"><img src="/assets-images/icons/instagram.svg" title="Logo Instagram" alt="Logo Instagram"></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/"><img src="/assets-images/icons/youtube.svg" title="Logo Youtube" alt="Logo Youtube"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/"><img src="/assets-images/icons/linkedin.svg" title="Logo LinkedIn" alt="Logo LinkedIn"></a>
+             </div>  
+        </div>
+        <div class="social">
+            <div class="social1">
+                Télécharger notre application : 
+            </div>
+            <div>
+                <a href="https://play.google.com/store/apps?hl=fr&gl=US&pli=1"><img src="/assets-images/icons/Google_Play_Store_badge_EN.svg.png" title="Logo Play Store" alt="Logo Play Store"></a>
+            </div> 
+            <div>
+                <a href="https://www.apple.com/fr/app-store/"><img src="/assets-images/icons/appstore.png" title="Logo App Store" alt="Logo App Store"></a>
+            </div> 
+            <div>
+                <a href="https://www.google.com/"><img src="/assets-images/icons/QR_Code_example.png" title="Logo QR Code" alt="Logo QR Code"></a>
+            </div>
+        <div>
+            &copy; Walid, Philippe, Robin   
+        </div>
+    </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
 
