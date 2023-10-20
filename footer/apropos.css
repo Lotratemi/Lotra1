@@ -1,12 +1,13 @@
 .apropos {
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
+    text-align: justify;
+    padding: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 35%;
+    margin-left: 33%;
     background-color:  rgb(235, 235, 162);
-    text-align: justify;
+    width: 33%;
 }
 
 .apropos h3 {
@@ -17,8 +18,8 @@
     width: 98%;
 }
 .aproposdivimg{
-    padding-left: 33%;  
     padding-top: 2%;
+    padding-left: 33%;
 }
 .aproposdiv {
     padding: 1%;
@@ -26,5 +27,4 @@
 iframe {
     padding-top: 1%;
     border-radius: 1rem;
-    padding-left: 3%;
 }

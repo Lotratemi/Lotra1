@@ -1,12 +1,13 @@
 .cgu {
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
+    text-align: justify;
+    padding: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 35%;
+    margin-left: 33%;
     background-color:  rgb(235, 235, 162);
-    text-align: justify;
+    width: 33%;
 }
 .cgu h3 {
     text-align: center;
@@ -27,7 +28,7 @@
     text-align: center;
     padding: 3px;
     color: white;
-    background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
+    background: linear-gradient(180deg, rgb(169, 169, 169), rgb(83, 83, 83));
     width: 50%;
 }
 .cgu p{

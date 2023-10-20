@@ -1,14 +1,16 @@
 .contact {
-    width: 40%;
-    margin: 0 auto;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 33%;
+    background-color:  rgb(235, 235, 162);
+    width: 33%;
 }
 
 h2{
-    text-align: center;
-    padding: 3px;
-    color: white;
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
-    width: 92%;
+    color: white;
+    text-align: center;
 }
 .form-group {
     margin-bottom: 5%;
@@ -26,14 +28,14 @@ h2{
 .form-group input[type="tel"],
 .form-group input[type="email"],
 .form-group textarea {
-    width: 80%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 .form-group2 input[type="text"],
 .form-group2 textarea {
-    width: 90%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
