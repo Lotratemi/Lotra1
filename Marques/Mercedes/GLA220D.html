@@ -32,14 +32,14 @@
             <li class="dropdown">
                 <a href="#">Financement</a>
                 <ul class="dropdown-content">
-                  <li><a href="#">Présentation générale</a></li>
+                  <li><a href="/Financement/presentation.html">Présentation générale</a></li>
                   <li><a href="#">Crédit</a></li>
                   <li><a href="#">Location avec Option d'Achat</a></li>
                   <li><a href="#">Location Longue Durée</a></li>
                 </ul>
             </li> 
             <li class="dropdown">
-              <a href="#">Marques</a>
+              <a href="/Marques/marques.html">Marques</a>
               <ul class="dropdown-content">
                 <li><a href="/Marques/BMW/bmw.html">BMW</a></li>
                 <li><a href="/Marques/dacia/dacia.html">Dacia</a></li>
@@ -54,10 +54,31 @@
         </ul>
     </nav>
     <main>
-        <div>
-            <img class="voiture" src="/assets-images/MercoBENZ/Merco GLA 220D 4Matic/Mercedes_GLA_MD_1.jpg" title="Mercedes GLA 220D 4Matic" alt="Mercedes GLA 220D 4Matic">
+        <div class="eqs">
+            <div class="body-carousel">  
+                <div class="carousel"> 
+                    <button id="prevBtn" onclick="prevSlide()">❮</button>  
+                    <div class="slides"></div>
+                        <div class="slide">
+                            <img src="/assets-images/MercoBENZ/Merco GLA 220D 4Matic/Mercedes_GLA_MD_0.jpg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/MercoBENZ/Merco GLA 220D 4Matic/Mercedes_GLA_MD_1.jpg" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/MercoBENZ/Merco GLA 220D 4Matic/Mercedes_GLA_MD_2.jpg" alt="Image 4">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/MercoBENZ/Merco GLA 220D 4Matic/Mercedes_GLA_MD_5.jpg" alt="Image 5">
+                        </div>
+                        
+                    <div class="slides"></div>             
+                    <button id="nextBtn" onclick="nextSlide()">❯</button>
+                </div>
+            </div>
         </div>
         <div class="survol">
+            <div class="logox"><a href="/Marques/Mercedes/mercedes.html"><img src="/assets-images/Logo Marques/Merco.png" title="Logo Mercedes" alt="Logo Mercedes"></a></div>
             <h3>Infos Mercedes GLA 220D 4Matic année 2023</h3>
             <div class="ligne">
                 <div>Marque:</div>
@@ -202,7 +223,7 @@
          
         <div class="survol2">  
             <h3>Indice de pollution</h3>
-            <img class="indice" src="#" title="Indice de pollution" alt="Indice de pollution">
+            <img class="indice" src="/assets-images/CO2/Merco/Merco GLA 220D 4Matic.png" title="Indice de pollution" alt="Indice de pollution">
         </div>
     </main>
     <footer>

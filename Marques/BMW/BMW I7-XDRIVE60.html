@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../../script.js"></script>
-    <link rel="stylesheet" href="../../style.css">
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/Marques/BMW/style-I7.css">
 </head>
 <body>
@@ -32,14 +32,14 @@
             <li class="dropdown">
                 <a href="#">Financement</a>
                 <ul class="dropdown-content">
-                  <li><a href="#">Présentation générale</a></li>
+                  <li><a href="/Financement/presentation.html">Présentation générale</a></li>
                   <li><a href="#">Crédit</a></li>
                   <li><a href="#">Location avec Option d'Achat</a></li>
                   <li><a href="#">Location Longue Durée</a></li>
                 </ul>
             </li> 
             <li class="dropdown">
-              <a href="#">Marques</a>
+              <a href="/Marques/marques.html">Marques</a>
               <ul class="dropdown-content">
                 <li><a href="/Marques/BMW/bmw.html">BMW</a></li>
                 <li><a href="/Marques/dacia/dacia.html">Dacia</a></li>
@@ -54,10 +54,31 @@
         </ul>
     </nav>
     <main>
-        <div>
-            <img class="voiture" src="/assets-images/BMW/Berline/BMW i7 xDrive60 544 ch. Berline/BMW i7 xDrive60 (front-View).jpg" title="BMW I7" alt="BMW I7">
+        <div class="body-carousel">  
+            <div class="carousel"> 
+                <button id="prevBtn" onclick="prevSlide()">❮</button>  
+                <div class="slides"></div>
+                    <div class="slide">
+                        <img src="/assets-images/BMW/Berline/BMW i7 xDrive60 544 ch. Berline/BMW i7 xDrive60 (front-View).jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets-images/BMW/Berline/BMW i7 xDrive60 544 ch. Berline/BMW i7 xDrive60 (back-view).jpg" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets-images/BMW/Berline/BMW i7 xDrive60 544 ch. Berline/BMW i7 xDrive60 (inside).jpg" alt="Image 4">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets-images/BMW/Berline/BMW i7 xDrive60 544 ch. Berline/BMW i7 xDrive60 (inside2).jpg" alt="Image 5">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets-images/BMW/Berline/BMW i7 xDrive60 544 ch. Berline/BMW i7 xDrive60 544 ch..jpg" alt="Image 1">
+                    </div>
+                <div class="slides"></div>             
+                <button id="nextBtn" onclick="nextSlide()">❯</button>
+            </div>
         </div>
         <div class="survol">
+            <div class="logox"><a href="/Marques/BMW/bmw.html"><img src="/assets-images/Logo Marques/BMW.png" title="Logo BMW" alt="Logo BMW"></a></div>
             <h3>Infos BMW I7 XDRIVE60 ANNÉE 2022 </h3>
             <div class="ligne">
                 <div>Marque:</div>
