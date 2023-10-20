@@ -130,6 +130,7 @@ main{
 section{
     padding: 1%;
     margin-top: 1%;
+    margin-bottom: 1%;
     margin-left: 33%;
     background-color:  rgb(235, 235, 162);
     width: 33%;
@@ -146,6 +147,24 @@ section h2{
     margin-bottom: 3vh;
 }
 
+.logox{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 2%;
+}
+.logox div{
+    width: 6rem;
+}
+.logox img{
+    width: 5rem;
+    padding: 0.5rem;
+}
+.logox img:hover{
+    opacity: 0.7;
+    width: 5.5rem;
+}
 .logo1{
     display: flex;
     justify-content: space-around;
@@ -203,14 +222,20 @@ section h2{
     justify-content: center;
     align-items: center;
     height: 30vh;
+    background-color:  rgb(235, 235, 162);
     width: 45vh;
-    margin-top: 5vh;
+    margin-top: 3vh;
+    border-radius: 40px;
+    border: 2px solid black;
+    opacity: 0.8;
+    margin-bottom: 3vh;
 }
 
 .carousel {
     position: relative;
     width: 400px;
     margin: auto;
+    opacity: 1;
 }
 
 .slides {
