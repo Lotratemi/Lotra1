@@ -1,0 +1,60 @@
+.voiture{
+    margin-top: 30px;
+    height: 300px;
+    width: auto;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.indice{
+    padding-left: 40%;
+    height: 200px;
+    width: 200px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(/assets-images/fonds/fond_bmw_x3mb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.survol {
+    display: flex;
+    flex-direction: column;
+    width: 533px;
+    background-color:  rgb(235, 235, 162);
+    opacity: 0.8;
+    
+}
+
+.survol2 {
+    display: flex;
+    flex-direction: column;
+    width: 533px;
+    background-color:  rgb(235, 235, 162);
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+h3{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
+    width: 533.33;
+}
+
+.survol div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ligne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
