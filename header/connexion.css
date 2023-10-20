@@ -1,16 +1,16 @@
 .connexion {
-    width: 40%;
-    margin: 0 auto;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 33%;
     background-color:  rgb(235, 235, 162);
-
+    width: 33%;
 }
 
 h2{
-    text-align: center;
-    padding: 3px;
-    color: white;
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
-    width: 92%;
+    color: white;
+    text-align: center;
 }
 .form-group {
     margin-bottom: 5%;
