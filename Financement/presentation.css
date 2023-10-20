@@ -32,11 +32,49 @@ body {
 }
 
 .box {
-    background-color: #ebf5d4;
+    color: white;
+    background-color: #0e7df3c9;
     border-radius: 10px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
+
+.image-list {
+    list-style: none;
+    padding: 0;
+}
+
+.image-list li {
+    margin-bottom: 10px;
+}
+
+.image-list img {
+    width: 20px; /* Ajustez la taille de l'image selon vos besoins */
+    margin-right: 10px;
+    text-align: left;
+}
+
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+}
+
+.icon-list img {
+    margin-bottom: 10px;
+    display: flex; /* Utilisez flexbox pour aligner l'icône et le texte */
+    align-items: center; /* Alignez verticalement les éléments de la liste */
+    width: 20px; /* Ajustez la taille de l'image selon vos besoins */
+}
+
+.icon-list img {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+
+.icon-list img, .icon-list li {
+    text-align: left; /* Alignez le texte et l'icône à gauche */
+}
