@@ -1,69 +1,30 @@
-.contact {
-    width: 40%;
-    margin: 0 auto;
+.bonsplans {
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 33%;
+    background-color:  rgb(235, 235, 162);
+    width: 33%;
 }
 
 h2{
-    text-align: center;
-    padding: 3px;
-    color: white;
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
-    width: 92%;
+    color: white;
+    text-align: center;
 }
-.form-group {
-    margin-bottom: 5%;
+.argent{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crée 3 colonnes égales */
+    grid-gap: 10px
 }
-
-.form-group label {
-    display: flex;
-    font-weight: bold;
+.argent p {
+    text-align: justify;
+    padding-right: 5%;
 }
-.form-group2 label {
-    display: flex;
-    font-weight: bold;
+.argent img{
+    width: 15rem;
 }
-.form-group input[type="text"],
-.form-group input[type="tel"],
-.form-group input[type="email"],
-.form-group textarea {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.form-group2 input[type="text"],
-.form-group2 textarea {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-group2 textarea {
-    height: 100px;
-}
-.form-group textarea {
-    height: 100px;
-}
-.submit-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 5%;
-    margin-top: 2%;
-
-}
-
-/* Styles pour le formulaire en colonnes */
-.form-columns {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.form-columns .form-group {
-    flex: 1;
-    margin: 5px;
+.argent img:hover{
+    opacity: 0.7;
 }
