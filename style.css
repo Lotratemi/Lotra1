@@ -10,6 +10,9 @@ header{
 .logo{
     height: 8rem;
 }
+.home{
+    width: 20%;
+}
 .search-menu {
     display: flex;
     flex-direction: row;
