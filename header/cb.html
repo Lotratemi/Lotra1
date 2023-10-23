@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/Marques/RR/rr.css">
+    <link rel="stylesheet" href="connexion.css">
 </head>
 
 <body>
@@ -54,26 +54,29 @@
         </ul>
     </nav>
     <main>
-        <div class="contact">
-            <h2>Votre pannier</h2>
-            <div class="contactpannier">
-                <div class="product">
-                    <div class="miniatures"><a href="/Marques/RR/cullinan.html" title="Rolls-Royce Cullinan V12"><img src="/assets-images/R&R/R&R CULLINAN V12/R&R Cullinan SUV.jpg" alt="Rolls-Royce Cullinan V12"></a></div>
-                    <h4>Rolls-Royce Cullinan V12</h4>
-                    <p>Prix : 280500 €</p>
-                    <button class="remove-from-cart">Retirer</button>
+        <div class="connexion">
+            <h1>Entrez vos informations de carte de crédit</h1>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="nom">Nom du titulaire de la carte :</label>
+                    <input type="text" id="nom" name="nom" required><br>
                 </div>
-                <div class="product">
-                    <div class="miniatures"><a href="/Marques/RR/ghost.html" title="Rolls-Royce Ghost V12 Black Badge"><img src="/assets-images/R&R/R&R Ghost v12/R&r GHOST SERIESNii.jpg" alt="Rolls-Royce Ghost V12 Black Badge"></a></div>  
-                    <h4>Rolls-Royce Ghost V12 Black Badge</h4>
-                    <p>Prix : 302000 €</p>
-                    <button class="remove-from-cart">Retirer</button>
+                <div class="form-group">
+                    <label for="numero">Numéro de carte :</label>
+                    <input type="text" id="numero" name="numero" required><br>
                 </div>
-                <div class="total">
-                    <p>Total : 582500 €</p>
-                    <button class="checkout"><a href="cb.html"> Payer</a></button>
+                <div class="form-group">
+                    <label for="expiration">Date d'expiration :</label>
+                    <input type="text" id="expiration" name="expiration" required><br>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="cvv">Code de sécurité (CVV) :</label>
+                    <input type="text" id="cvv" name="cvv" required><br>
+                </div>
+                <div class="form-group">   
+                    <input class="submit-button" type="submit" onclick="afficherAlerte()" value="Valider le paiement">
+                </div>
+            </form>
         </div>
     </main>
     <footer>
