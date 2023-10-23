@@ -1,0 +1,68 @@
+main_financement {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.container {
+    margin: 5vw;
+    /*
+    padding left: 10vw;
+    padding right: 10vw;
+    */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    justify-content: space-around;
+    margin: 5vw;
+    height: 6vh;
+}
+
+.boite_foncee {
+    display: flex;
+    flex-direction: column;
+    background-color: #0475eeee;
+    color: white;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.boite_claire {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.texte_centre {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.aligne_a_gauche {
+    text-align: left;
+
+}
+
+.ecriture_imposante {
+    font-size: 2rem;
+}
+
+
