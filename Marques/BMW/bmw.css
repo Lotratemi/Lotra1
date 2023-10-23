@@ -7,6 +7,13 @@
     width: 33%;
 }
 
+.contact2 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    background-color:  rgb(235, 235, 162);
+}
 h2{
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
     color: white;
@@ -29,4 +36,60 @@ iframe{
 }
 .miniatures img:hover{
     opacity: 0.7;
+}
+
+.miniaturesindex{
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2fr;
+}
+.miniaturesindex img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.miniaturesindex img:hover{
+    opacity: 0.7;
+}
+.miniaturesindex div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color:  rgb(235, 235, 193);
+    border: 1px solid rgb(251, 188, 0);
+    width: 80%;
+    height: 95%;
+    margin: 1%;
+}
+.miniaturesindex p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.price {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #ff9900; 
+    text-decoration: underline; 
+    text-transform: uppercase; 
+    background-color: #f5f5f5; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
+    display: inline-block; 
+    transition: background-color 0.3s; 
+}
+
+.price:hover {
+    background-color: #ff9900; 
+    color: #fff; 
+}
+.carname{
+    font-weight: bold; 
+    color: #010749; 
+    
 }

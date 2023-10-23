@@ -6,7 +6,17 @@
     background-color:  rgb(235, 235, 162);
     width: 33%;
 }
+.contactpannier {
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color:  rgb(235, 235, 193);
+    border-radius: 20px;
 
+    
+}
 h2{
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
     color: white;
@@ -16,7 +26,10 @@ h2{
 iframe{
     padding-left: 5%;
 }
-
+.product{
+    padding-top: 5%;
+    padding-left: 5%;
+}
 .miniatures{
     display: grid;
     grid-template-columns: repeat(3, 4fr);
@@ -30,3 +43,49 @@ iframe{
 .miniatures img:hover{
     opacity: 0.7;
 }
+.remove-from-cart {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 3%;
+}
+
+
+.remove-from-cart:hover {
+    background-color: #cc0000;
+}
+.total {
+    background-color: #fff;
+    margin-top: 5%;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 5%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.checkout {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.checkout a{
+    text-decoration: none;
+}
+.checkout:hover {
+    background-color: #45a049;
+}
+
+
+
+
