@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Marques/Mercedes/mercedesproduit.css">
+</head>
+<body>
+    <header >
+        <div class="header-font">
+            <img class="logo" src="/assets-images/logo.jpg" title="Logo de l'entreprise Sanderolls" alt="Logo de l'entreprise Sanderolls">
+        </div>
+        <div class="search-menu">
+            <input type="text" placeholder="Rechercher...">
+            <button>Rechercher</button>
+        </div>
+        <div>
+            <button class="login-button">
+                <a href="/header/connexion.html"><img src="/assets-images/icons/account cnx.svg" title="Logo connexion" alt="Logo connexion"></a>
+            </button>
+            <button class="panier">
+                <a href="/header/panier.html"><img src="/assets-images/icons/panier.svg" title="Logo panier" alt="Logo panier"> </a>
+            </button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Financement</a>
+                <ul class="dropdown-content">
+                  <li><a href="/Financement/presentation.html">Présentation générale</a></li>
+                  <li><a href="/Financement/credit.html">Crédit</a></li>
+                  <li><a href="/Financement/LOA.html">Location avec Option d'Achat</a></li>
+                  <li><a href="/Financement/lld.html">Location Longue Durée</a></li>
+                </ul>
+            </li> 
+            <li class="dropdown">
+              <a href="/Marques/marques.html">Marques</a>
+              <ul class="dropdown-content">
+                <li><a href="/Marques/BMW/bmw.html">BMW</a></li>
+                <li><a href="/Marques/dacia/dacia.html">Dacia</a></li>
+                <li><a href="/Marques/lamborghini/lamborghini.html">Lamborghini</a></li>
+                <li><a href="/Marques/lotus/lotus.html">Lotus</a></li>
+                <li><a href="/Marques/Mercedes/mercedes.html">Mercedes</a></li>
+                <li><a href="/Marques/RR/rr.html">Rolls Royce</a></li>
+              </ul>
+            </li>  
+            <li><a href="/Nouveautes/nouveautes.html">Nouveautés</a></li>
+            <li><a href="/BonsPlans/bonsplans.html">Bons plans</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="huracan">
+            <div class="body-carousel">  
+                <div class="carousel"> 
+                    <button id="prevBtn" onclick="prevSlide()">❮</button>  
+                    <div class="slides"></div>
+                        <div class="slide">
+                            <img src="/assets-images/NOUVEAUTÉS Motos/ARCH 1S/2020-Arch-Motorcycles-KRGT-1-13-scaled.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/NOUVEAUTÉS Motos/ARCH 1S/2023-arch-1s-review-1.webp" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/NOUVEAUTÉS Motos/ARCH 1S/Arch 1s.jpg" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/NOUVEAUTÉS Motos/ARCH 1S/Arch-1s.jpg" alt="Image 4">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets-images/NOUVEAUTÉS Motos/ARCH 1S/arch1S.jpg" alt="Image 5">
+                        </div>
+                    <div class="slides"></div>             
+                    <button id="nextBtn" onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+        </div>
+        <div class="survol">
+            <div class="ligne1">
+                <div>Prix Arch 1S</div>
+                <div>128000 €</div>
+            </div>
+            <button class="add-to-cart"><a href="/header/panier.html">Ajouter au panier</a></button>
+            <h3>Infos Arch 1S année 2023 </h3>
+            <div class="ligne">
+                <div>Marque:</div>
+                <div>Arch</div>
+            </div>
+            <div class="ligne">
+                <div>Catégorie:</div>
+                <div>Super Motos</div>
+            </div>
+            <div class="ligne">
+                <div>Carburant:</div>
+                <div>Essence</div>
+            </div>
+            <div class="ligne">
+                <div>Modèle:</div>
+                <div>1S</div>
+            </div>
+            <div class="ligne">
+                <div>Année:</div>
+                <div>2023</div>
+            </div>
+            
+        </div>
+        <div class="survol">  
+            <h3>Mecanique Arch 1S année 2023 </h3>
+            <div class="ligne"> 
+                <div>Cylindrée:</div>
+                <div>2032 cm³</div>
+            </div> 
+            <div class="ligne"> 
+                <div>Puissance:</div>
+                <div>121 ch</div>
+            </div> 
+            <div class="ligne"> 
+                <div>Boite de vitesse:</div>
+                <div>Manuelle 6 rapports</div>
+            </div> 
+            <div class="ligne"> 
+                <div>Transmission: </div>
+                <div>chaine</div>
+            </div> 
+        </div>
+        <div class="survol"> 
+            <h3>Performances Arch 1S année 2023 </h3>
+            <div class="ligne">
+                <div>Vitesse max:</div>
+                <div>220 km/h</div>
+            </div>
+            <div class="ligne">
+                <div>Accélération (0 à 100km):</div>
+                <div>3 s</div>
+            </div>
+            <div class="ligne">
+                <div>Rapport Poids/puissance:</div>
+                <div>2.017 kg/h</div>
+            </div>
+            <div class="ligne">
+                <div>Rapport puissance/litre:</div>
+                <div>59.547 ch/litre</div>
+            </div>
+            <div class="ligne">
+                <div>Type:</div>
+                <div>V2, 4 Temps</div>
+            </div>
+            <div class="ligne">
+                <div>Soupapes:</div>
+                <div>8 Soupapes</div>
+            </div>
+            <div class="ligne">
+                <div>Alésage x course:</div>
+                <div>104.7 x 117.4 mm</div>
+            </div>
+            <div class="ligne">
+                <div>Compression:</div>
+                <div>8.9:1</div>
+            </div>
+            <div class="ligne">
+                <div>Alomentation:</div>
+                <div>Injection électronique</div>
+            </div>
+            <div class="ligne">
+                <div>Refroidissement:</div>
+                <div>Air</div>
+            </div>
+            <div class="ligne">
+                <div>Démarreur:</div>
+                <div>Electrique</div>
+            </div>
+            <div class="ligne">
+                <div>Couple:</div>
+                <div>153 Nm à 3200 tr/min</div>
+            </div>
+        </div>
+        <div class="survol">   
+            <h3>Chassis & roues</h3>
+            <div class="ligne">
+                <div>Embrayage:</div>
+                <div>Hydraulique,multidique à bain d'huile </div>
+            </div>
+            <div class="ligne">
+                <div>Cadre:</div>
+                <div>Acier,treillis tubulaire</div>
+            </div>
+            <div class="ligne">
+                <div>Diamètre de braquage:</div>
+                <div>mètres</div>
+            </div>
+            <div class="ligne">
+                <div>Suspension avant:</div>
+                <div>Fourche télescopique inversé 43 mm</div>
+            </div>           
+            <div class="ligne"> 
+                <div>Suspension arrière:</div>
+                <div>Mono-amortisseur</div>
+            </div>
+            <div class="ligne"> 
+                <div>Freins avant:</div>
+                <div>Double disques(298 mm),étiers 6 pistons,ABS Bosch</div>
+            </div>
+            <div class="ligne"> 
+                <div>Freins arrière:</div>
+                <div>1 Disque(240 mm),étiers 4 pistons,ABS Bosch</div>
+            </div>
+            <div class="ligne"> 
+                <div>Pneus avant:</div>
+                <div>Michelin Power 120/70 ZR17</div>
+            </div>
+            <div class="ligne"> 
+                <div>Pneus arrière:</div>
+                <div>Michelin Power 240/40 ZR17</div>
+            </div>
+        </div>
+        <div class="survol2"> 
+            <h3>Dimensions/Poids Arch 1S année 2023 </h3>
+            <div class="ligne"> 
+                <div>Poids à:</div>
+                <div>244 kg</div>
+            </div>
+            <div class="ligne"> 
+                <div>Hauteur de selle:</div>
+                <div>705 mm</div>
+            </div>
+        
+            <div class="ligne">
+                <div>Empattement:</div>
+                <div>1528 mm</div>
+            </div>
+            <div class="ligne">
+                <div>Cx:</div>
+                <div>0</div>
+            </div>
+            <div class="ligne2">
+                <div>SCx:</div>
+                <div>0 m²</div>
+            </div>
+        </div>      
+            
+    </main>
+    <footer>
+        <div class="infos-entreprises">
+            <a href="/footer/apropos.html">À propos</a>
+            <a href="/footer/cgu.html">Conditions générales d'utilisation</a>
+            <a href="/footer/contact.html">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Newsletter</a>
+        </div>
+        <div class="social">
+            <div class="social1">
+                Suivez nous sur : 
+            </div>
+            <div>
+                <a href="https://www.facebook.com/"><img src="/assets-images/icons/facebook.svg" title="Logo Facebook" alt="Logo Facebook"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/X"><img src="/assets-images/icons/twitter.svg" title="Logo Twitter" alt="Logo Twitter"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/"><img src="/assets-images/icons/instagram.svg" title="Logo Instagram" alt="Logo Instagram"></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/"><img src="/assets-images/icons/youtube.svg" title="Logo Youtube" alt="Logo Youtube"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/"><img src="/assets-images/icons/linkedin.svg" title="Logo LinkedIn" alt="Logo LinkedIn"></a>
+             </div>  
+        </div>
+        <div class="social">
+            <div class="social1">
+                Télécharger notre application : 
+            </div>
+            <div>
+                <a href="https://play.google.com/store/apps?hl=fr&gl=US&pli=1"><img src="/assets-images/icons/Google_Play_Store_badge_EN.svg.png" title="Logo Play Store" alt="Logo Play Store"></a>
+            </div> 
+            <div>
+                <a href="https://www.apple.com/fr/app-store/"><img src="/assets-images/icons/appstore.png" title="Logo App Store" alt="Logo App Store"></a>
+            </div> 
+            <div>
+                <a href="https://www.google.com/"><img src="/assets-images/icons/QR_Code_example.png" title="Logo QR Code" alt="Logo QR Code"></a>
+            </div>
+        <div>
+            &copy; Walid, Philippe, Robin   
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
