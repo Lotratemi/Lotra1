@@ -58,3 +58,22 @@ h3{
     justify-content: space-between;
 }
 
+.fond_blanc {
+    display: flex;
+    background-color: white;
+}
+
+.dropdown-content_recherche {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.dropdown-content_recherche li {
+    display: block;
+}
+ 
+.dropdown:hover .dropdown-content_recherche {
+    display: block;
+}
