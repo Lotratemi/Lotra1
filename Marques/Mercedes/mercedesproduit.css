@@ -1,18 +1,13 @@
-.voiture{
-    margin-top: 30px;
-    height: 300px;
-    width: auto;
-    border-radius: 40px;
-    border: 2px solid black;
-}
-
 .indice{
-    padding-left: 33%;
+    margin-left: 35%;
     padding-bottom: 1%;
-    height: 200px;
-    width: 200px;
+    width: 50%;
 }
-
+.indice2{
+    margin-left: 30%;
+    padding-bottom: 1%;
+    width: 30%;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -26,7 +21,7 @@ main{
 .survol {
     display: flex;
     flex-direction: column;
-    width: 533px;
+    width: 50%;
     background-color:  rgb(235, 235, 162);
     opacity: 0.8;
     
@@ -35,7 +30,7 @@ main{
 .survol2 {
     display: flex;
     flex-direction: column;
-    width: 533px;
+    width: 50%;
     background-color:  rgb(235, 235, 162);
     opacity: 0.8;
     margin-bottom: 30px;
@@ -66,7 +61,7 @@ h3{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 100%;
     margin-top: 10px;
 }
 .add-to-cart a{
@@ -99,12 +94,144 @@ h3{
 .eqs img{
     width: 90%;
     padding-left: 5%;
+    border-radius: 10px;
 }
 .huracan img{
     width: 80%;
     height: 90%;
     padding-left: 10%;
+    border-radius: 10px;
+
 }
 p{
     text-align: center;
+}
+
+@media screen and (min-width: 1201px){
+    .body-carousel {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .ligne{
+        font-size: small;
+    }
+    .ligne1{
+        font-size: small;
+
+    }
+    .ligne2{
+        font-size: small;
+
+    }
+    .body-carousel {
+        width: 50%;
+        margin-left: 25%;
+    }
+}  
+@media screen and (max-width: 950px){
+    .ligne{
+        font-size: x-small;
+    }
+    .ligne1{
+        font-size: x-small;
+    }
+    .ligne2{
+        font-size: x-small;
+    }
+    h3{
+        font-size: medium;
+    }
+    .add-to-cart {
+        font-size: 80%;
+    }
+    .body-carousel {
+        width: 50%;
+        margin-left: 25%;
+    }
+} 
+@media screen and (max-width: 750px){
+    .ligne{
+        font-size: xx-small;
+    }
+    .ligne1{
+        font-size: xx-small;
+    }
+    .ligne2{
+        font-size: xx-small;
+    }
+    h3{
+        font-size: small;
+
+    }
+    .add-to-cart {
+        font-size: 70%;
+    }
+    
+} 
+
+@media screen and (max-width: 700px){
+    .survol{
+        width: 60%;
+    }
+    .survol2{
+        width: 60%;
+    }
+    .body-carousel {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 20px;
+
+    }
+}
+@media screen and (max-width: 600px){
+    .survol{
+        width: 70%;
+    }
+    .survol2{
+        width: 70%;
+    }
+    .body-carousel {
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 20px;
+
+    }
+}
+@media screen and (max-width: 500px){
+    .survol{
+        width: 80%;
+    }
+    .survol2{
+        width: 80%;
+    }
+    .body-carousel {
+        width: 80%;
+        margin-left: 10%;
+
+    }
+}
+
+@media screen and (max-width: 450px){
+    .survol{
+        width: 90%;
+    }
+    .survol2{
+        width: 90%;
+    }
+    .body-carousel {
+        width: 90%;
+        margin-left: 5%;
+
+    }
+}
+@media screen and (max-width: 400px){
+    .survol{
+        width: 95%;
+    }
+    .survol2{
+        width: 95%;
+    }
+    
 }
