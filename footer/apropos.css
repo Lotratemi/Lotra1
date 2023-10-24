@@ -5,26 +5,58 @@
     padding: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: 33%;
+    margin-left: 25%;
     background-color:  rgb(235, 235, 162);
-    width: 33%;
+    width: 50%;
 }
 
 .apropos h3 {
     text-align: center;
-    padding: 5px;
+    padding: 1%;
     color: white;
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
     width: 98%;
 }
 .aproposdivimg{
+    display: flex;
+    justify-content: center;
     padding-top: 2%;
-    padding-left: 33%;
 }
-.aproposdiv {
-    padding: 1%;
-}
+
 iframe {
+    width: 90%;
+    
     padding-top: 1%;
     border-radius: 1rem;
+    margin-left: 5%;
 }
+img{
+    width:40% ;
+}
+@media screen and (max-width: 800px){
+    iframe {
+        width: 90%;
+        height: auto;
+        padding-top: 1%;
+        border-radius: 1rem;
+        margin-left: 5%;
+    }
+    p{
+        font-size: small;
+    }
+    h3{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 650px){
+    p{
+        font-size: x-small;
+    }
+    h3{
+        font-size: small;
+    }
+}
+
+
+
