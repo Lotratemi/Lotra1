@@ -2,9 +2,9 @@
     padding: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: 33%;
+    margin-left: 15%;
     background-color:  rgb(235, 235, 162);
-    width: 33%;
+    width: 70%;
 }
 
 h2{
@@ -13,18 +13,41 @@ h2{
     text-align: center;
 }
 .argent{
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Crée 3 colonnes égales */
-    grid-gap: 10px
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
-.argent p {
+.argent div{
+    padding: 1%;
     text-align: justify;
-    padding-right: 5%;
+    
 }
 .argent img{
-    width: 15rem;
+    width: 90%;
+    
 }
 .argent img:hover{
     opacity: 0.7;
 }
+
+
+
+@media screen and (max-width: 800px){
+    .argent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .argent div{
+        font-size: small;
+    }
+    .argent img{
+        width: 50%;
+        margin-left: 25%;
+        
+    }
+}
+
