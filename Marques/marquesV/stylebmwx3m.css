@@ -83,7 +83,7 @@ h3{
     flex-direction: row;
     justify-content:space-around;
 }
-
+/*
 .search-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -96,7 +96,9 @@ h3{
     /*
     position: relative;
     display: inline-block;*/
+/*
 }
+*/
 
 .dropdown {
     /*position: relative;*/
@@ -160,11 +162,58 @@ dropdown-content {
     display: block;
 }
 
+.input_size {
+    height: 11px;
+}
+
 .small_image {
     width: 20px;
+    margin-top: 0px;
     /*width: 15%; */
     /*min-width: 12px; /* Largeur minimale de l'image */
     /*min-height: 12px; /* Hauteur minimale de l'image */
     /*width: 2vw; */
     /*height: 4vh; */
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    /*background-color: aqua;*/
+    /*border: 2px solid black;*/
+}
+
+.search-domain, .search-input {
+    padding: 0px;
+    margin: 0px;
+    /*border: 1px solid #ccc;*/
+}
+
+.search-button {
+    padding: 0%;
+    margin: 0%;
+    background:rgb(78, 78, 187);
+    /*background-color: aqua;*/
+    /*border: 5px solid black;*/
+    border: none;
+    cursor: pointer;
+    /*margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;*/
+    /*
+    padding-bottom: -5%;
+    padding-top: -10%;
+    */
+    padding-top:5px;
+}
+
+.search-button img {
+    width: 20px; /* Ajustez la taille de l'icône selon vos besoins */
+    height:20px;
+    background-color: green;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
 }
