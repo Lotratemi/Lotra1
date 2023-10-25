@@ -8,7 +8,11 @@ header{
     background: linear-gradient(90deg, #010749, #2e6abf);
 }
 .logo{
-    height: 8rem;
+    padding: 5%;
+    height: 100%;
+}
+.home{
+    width: 20%;
 }
 .search-menu {
     display: flex;
@@ -40,7 +44,7 @@ header{
 }
 .login-button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 2rem;
     border: none;
     border-radius: 5px;
     background-color: #3498db; 
@@ -53,7 +57,7 @@ header{
 }
 .panier {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 2rem;
     border: none;
     border-radius: 5px;
     background-color: #f0c903; 
@@ -87,36 +91,73 @@ nav li {
     z-index: 1;
 
 } 
+/* Styles de base pour le lien */
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    z-index: 1;
-
+    text-decoration: none; /* Supprime la soulignement par défaut */
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    display: inline-block;
+    position: relative;
 }
+
+/* Styles du lien au survol */
 nav a:hover {
-    background-color: #555;
-    border-bottom: 3px rgb(0, 179, 255) solid;
-    z-index: 1;
-
+    background-color: #444444;
 }
-  
-/* Style du menu déroulant */
+
+/* Styles du dropdown container */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Styles du contenu du dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #444;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-.dropdown-content li {
-    display: block;
-}
- 
+
+/* Styles du contenu du dropdown au survol du lien parent */
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Styles du soulignement dynamique */
+nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Épaisseur du soulignement */
+    background-color: rgb(0, 157, 255); /* Couleur du soulignement */
+    transform: scaleX(0); /* Ajustez la valeur pour contrôler l'animation d'extension */
+    transform-origin: 0 0; /* L'animation se fait à partir de la gauche */
+    transition: transform 0.3s ease; /* Animation de l'extension avec une transition en douceur */
+}
+
+/* Animation du soulignement au survol */
+nav a:hover::before {
+    transform: scaleX(1); /* L'animation d'extension complète */
+}
+
+/* Styles des liens du dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Styles des liens du dropdown au survol */
+.dropdown-content a:hover {
+    background-color: #444444;
+}
+
 
 
 main{
@@ -128,9 +169,17 @@ main{
 
 }
 section{
-    margin-left: 40%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 15%;
     background-color:  rgb(235, 235, 162);
-    width: 22%;
+    width: 70%;
+}
+section h2{
+    background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
+    color: white;
+    text-align: center;
 }
 .section-top{
     margin-top: 3vh;
@@ -138,20 +187,132 @@ section{
 .section-bottom{
     margin-bottom: 3vh;
 }
+
+.sort-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-left: 37%;
+    width: 10%;
+}
+
+.sort-links select {
+    padding: 5%;
+    font-size: 100%;
+    width: 250%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Styles pour les options de la liste déroulante */
+.sort-links option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styles au survol des options (hover) */
+.sort-links option:hover {
+    background-color: #0074d9;
+    color: #fff;
+}
+
+.logox{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 2%;
+}
+.logox div{
+    width: 6rem;
+}
+.logox img{
+    width: 5rem;
+    padding: 0.5rem;
+}
+.logox img:hover{
+    opacity: 0.7;
+    width: 5.5rem;
+}
+.logo1{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgb(235, 235, 193);
+    border-radius: 10px;
+    align-items: center;
+}
+.logo1 div{
+    width: 20%;
+}
+.logo1 img{
+    width: 70%;
+    padding-left: 20%;
+}
+.logo1 img:hover{
+    opacity: 0.7;
+    width: 80%;
+}
+.logo2 {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-around;    
+    background-color:  rgb(235, 235, 193);
+    border-radius: 10px;
+    align-items: center;
+
+}
+.logo2 div{
+    width: 20%;
+}
+.logo2 img{
+    width: 70%;
+    padding-left: 20%;
+
+}
+
+.logo3 {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgb(235, 235, 193);
+    border-radius: 10px;
+    align-items: center;
+
+}
+.logo3 div{
+    width: 20%;
+}
+.logo3 img{
+    width: 70%;
+    padding: 20%;
+
+}
 /* Styles pour le carousel d'images */
 .body-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-    width: 45vh;
-    margin-top: 5vh;
+    background-color:  rgb(235, 235, 162);
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: 2px solid black;
+    opacity: 0.8;
+    margin-bottom: 2%;
 }
 
 .carousel {
     position: relative;
-    width: 400px;
+    width: fit-content;
     margin: auto;
+    opacity: 1;
 }
 
 .slides {
@@ -163,7 +324,9 @@ section{
 }
 
 .slide img {
+    padding: 1%;
     width: 100%;
+    height: 100%;
 }
 
 .body-carousel button {
@@ -184,6 +347,29 @@ section{
     right: 0;
 }
 
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 45%;
+    background-color:  rgb(235, 235, 193);
+    border: 1px solid rgb(251, 188, 0);
+    width: 10%;
+}
+.pagination a{
+    text-decoration: none;
+    font-size: 100%;
+    color: #010749;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.pagination a:hover{
+    text-decoration: underline;
+    
+}
 /* Mise en forme du footer */
 footer {
     display: flex;
@@ -227,16 +413,99 @@ footer a:hover{
     opacity: 0.7;
 }
 
-
-@media screen and (max-width: 1100px){
+.indexiframe{
+    padding-left: 5%;
+}
+@media screen and (max-width: 1400px){
+    .social img{
+        height: 30px;
+    }
+}
+@media screen and (max-width: 1150px){
+    .sort-links select {
+            font-size: 80%;
+    }
+}
+@media screen and (max-width: 1100px){ 
+    h2{
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 1000px){
+    .sort-links select {
+        font-size: 60%;
+    }
+}   
+@media screen and (max-width: 800px){
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    } 
+    .sort-links select {
+        font-size: 40%;
     }
     .social{
-        display: flex;
+        display: block;
         flex-direction: row;
+    } 
+    h2{
+        font-size: small;
     }
-    
+    .logo{
+        width:80%;
+    }
+    footer{
+        font-size: small;
+    }
+    .pagination a{
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 750px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .sort-links select {
+        font-size: 30%;
+    }
+}   
+@media screen and (max-width: 575px){
+    nav ul {
+        font-size: small;
+    }
+    nav li {
+        font-size: small;
+    }
+    h2{
+        font-size: xx-small;
+    }
+    .sort-links select {
+        font-size: 10%;
+    }
+    .pagination a{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: smaller;
+
+    }
+    nav li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: smaller;
+
+    }
 }
