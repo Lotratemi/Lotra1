@@ -62,7 +62,6 @@ body, html {
     display: flex;
     grid-column: 1 / span 2; /* Le titre s'étend sur les deux colonnes */
     text-align: left;
-    /*background-color: #333; /* Couleur de fond du titre */
     color: black; /* Couleur du texte du titre */
     padding: 10px;
 }
