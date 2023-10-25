@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    background-color: #3498db; /* Couleur bleue */
+    height: 20%;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    background-color: #f8f2f2; /* Couleur grise */
+    flex-grow: 1;
+    /* Vous pouvez également utiliser "height: 80%;" au lieu de flex-grow */
+}
+
+.question-input {
+    display: flex;
+    align-items: center;
+}
+
+.question-input-field {
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%; /* Ajustez la largeur du champ de saisie */
+    /*margin: 0 auto; /* Centrer horizontalement la zone de saisie */
+}
+
+.question-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.question-input button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.image-button {
+    width: 15%;
+    margin-left: 1px;
+}
+
+.title {
+    display: flex;
+    grid-column: 1 / span 2; /* Le titre s'étend sur les deux colonnes */
+    text-align: left;
+    color: black; /* Couleur du texte du titre */
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-zone {
+    padding: 20px;
+    border: 1px solid #999;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.bandeau_bleu-text_white {
+    background-color: #3498db; /* Couleur bleue */
+    color: white;
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+    justify-content: center;
+}

@@ -119,7 +119,10 @@ iframe{
         margin-left: 15%;
         width: 70%;
     }
-    h4,p{
+    h4,p,label, select option{
+        font-size: small;
+    }
+    select option{
         font-size: small;
     }
 }
