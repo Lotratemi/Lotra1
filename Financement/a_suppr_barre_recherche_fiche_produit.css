@@ -1,0 +1,31 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.search-domain, .search-input {
+    padding: 0px;
+    margin: 0px;
+    /*border: 1px solid #ccc;*/
+}
+
+.search-button {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    /*border: 5px solid black;*/
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px; /* Ajustez la taille de l'icône selon vos besoins */
+    height: 20px;
+}
+
+.small_image {
+    /*width: 80%;*/
+    /*width: 4vw;
+    height: 4vh;*/
+}

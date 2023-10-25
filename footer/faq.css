@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    background-color: #3498db; /* Couleur bleue */
+    height: 20%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    background-color: #ccc; /* Couleur grise */
+    flex-grow: 1;
+    /* Vous pouvez également utiliser "height: 80%;" au lieu de flex-grow */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-zone {
+    padding: 20px;
+    border: 1px solid #999;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.text-white {
+    color: white;
+    justify-content: center;
+}
