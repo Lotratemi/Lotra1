@@ -99,7 +99,7 @@ h3{
 }
 
 .dropdown {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
 }
 
@@ -156,15 +156,15 @@ dropdown-content {
 */
 
 
-
-
-
 .search-container:hover .dropdown-content {
     display: block;
 }
 
 .small_image {
-    width: 15%;
-    /*width: 4vw;
-    height: 4vh;*/
+    width: 20px;
+    /*width: 15%; */
+    /*min-width: 12px; /* Largeur minimale de l'image */
+    /*min-height: 12px; /* Hauteur minimale de l'image */
+    /*width: 2vw; */
+    /*height: 4vh; */
 }
