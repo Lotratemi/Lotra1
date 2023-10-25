@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANDÉROLLS</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-arch-1s.css">
 </head>
 
 <body>
@@ -28,33 +28,33 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="/index.html">Accueil</a></li>
             <li class="dropdown">
                 <a href="#">Financement</a>
                 <ul class="dropdown-content">
-                  <li><a href="#">Présentation générale</a></li>
+                  <li><a href="/Financement/presentation.html">Présentation générale</a></li>
                   <li><a href="#">Crédit</a></li>
                   <li><a href="#">Location avec Option d'Achat</a></li>
                   <li><a href="#">Location Longue Durée</a></li>
                 </ul>
             </li> 
             <li class="dropdown">
-              <a href="#">Marques</a>
+              <a href="/Marques/marques.html">Marques</a>
               <ul class="dropdown-content">
-                <li><a href="#">BMW</a></li>
-                <li><a href="#">Dacia</a></li>
-                <li><a href="#">Lamborghini</a></li>
-                <li><a href="#">Lotus</a></li>
-                <li><a href="#">Mercedes</a></li>
-                <li><a href="#">Rolls Royce</a></li>
+                <li><a href="/Marques/BMW/bmw.html">BMW</a></li>
+                <li><a href="/Marques/dacia/dacia.html">Dacia</a></li>
+                <li><a href="/Marques/lamborghini/lamborghini.html">Lamborghini</a></li>
+                <li><a href="/Marques/lotus/lotus.html">Lotus</a></li>
+                <li><a href="/Marques/Mercedes/mercedes.html">Mercedes</a></li>
+                <li><a href="/Marques/RR/rr.html">Rolls Royce</a></li>
               </ul>
             </li>  
-            <li><a href="#">Nouveautés</a></li>
-            <li><a href="#">Bons plans</a></li>
+            <li><a href="/Nouveautes/nouveautes.html">Nouveautés</a></li>
+            <li><a href="/BonsPlans/bonsplans.html">Bons plans</a></li>
         </ul>
     </nav>
     <main>
-        <section class="section-top">
+        <!-- <section class="section-top">
             <div class="body-carousel">
                 <div class="carousel"> 
                     <button id="prevBtn" onclick="prevSlide()">❮</button>  
@@ -78,16 +78,37 @@
                     <button id="nextBtn" onclick="nextSlide()">❯</button>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section>
-            <h2>Liste des Produits :</h2>
-            <p><a href="Marques/BMW/BMW-M3.html" title="BMW M3">BMW M3</a></p>
-            <p>Mettre des div pour les voitures</p>
-        </section>
-        <section class="section-bottom">
-            <h2>Vous pourriez aussi aimer :</h2>
+            <h2>Retrouvez toutes nos marques</h2>
+            <div class="logo1">
+                <div><a href="/Marques/BMW/bmw.html"><img src="/assets-images/Logo Marques/BMW.png" title="Logo BMW" alt="Logo BMW"></a></div>
+                <div><a href="/Marques/dacia/dacia.html"><img src="/assets-images/Logo Marques/Dacia_logo_PNG4.png" title="Logo Dacia" alt="Logo Dacia"></a></div>
+                <div><a href="/Marques/lamborghini/lamborghini.html"><img src="/assets-images/Logo Marques/Lambo.png" title="Logo Lamborghini" alt="Logo Lamborghini"></a></div>
+                <div><a href="/Marques/lotus/lotus.html"><img src="/assets-images/Logo Marques/Lotus.png" title="Logo Lotus" alt="Logo Lotus"></a></div>
+                <div><a href="/Marques/Mercedes/mercedes.html"><img src="/assets-images/Logo Marques/Merco.png" title="Logo Mercedes" alt="Logo Mercedes"></a></div>
+                <div><a href="/Marques/RR/rr.html"><img src="/assets-images/Logo Marques/Rolls&Royce.png" title="Logo Rolls Royce" alt="Logo Rolls Royce"></a></div>
+            </div>
+            <h2>Prochainement chez SandéRolls</h2>
+            <div class="logo2">
+                <div><img src="/assets-images/Logo Marques/Alfa-Romeo-Logo.png" title="Logo Alfa Romeo" alt="Logo Alfa Romeo"></div>
+                <div><img src="/assets-images/Logo Marques/AstonMartin-LogoPNG1.png" title="Logo Aston Martin" alt="Logo Aston Martin"></div>
+                <div><img src="/assets-images/Logo Marques/Audi-LogoPNG1.png" title="Logo Audi" alt="Logo Audi"></div>
+                <div><img src="/assets-images/Logo Marques/Bentley-LogoPNG1.png" title="Logo Bentley" alt="Logo Bentley"></div>
+                <div><img src="/assets-images/Logo Marques/Chevrolet-Corvette.png" title="Logo Corvette" alt="Logo Corvette"></div>    
+            </div>
+            <div class="logo3">
+                <div><img src="/assets-images/Logo Marques/Ford Mustang.png" title="Logo Mustang" alt="Logo Mustang"></div>
+                <div><img src="/assets-images/Logo Marques/GMC-LogoPNG1.png" title="Logo GMC" alt="Logo GMC"></div>
+                <div><img src="/assets-images/Logo Marques/JAGUAR.png" title="Logo Jaguar" alt="Logo Jaguar"></div>
+                <div><img src="/assets-images/Logo Marques/Maserati.png" title="Logo Maserati" alt="Logo Maserati"></div>
+                <div><img src="/assets-images/Logo Marques/Subaru-LogoPNG1.png" title="Logo Subaru" alt="Logo Subaru"></div>
+            </div>
+            <h2>Vous pourriez aussi aimer</h2>
             <p>Mettre des div avec des articles auto</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QdufdFkah7c?si=kENnBwlkr6IKDfaS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
+
     </main>
     <footer>
         <div class="infos-entreprises">
