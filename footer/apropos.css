@@ -30,9 +30,7 @@ iframe {
     border-radius: 1rem;
     margin-left: 5%;
 }
-img{
-    width:40% ;
-}
+
 .aproposdiv1{
     display: flex;
     margin-left: 5%;
@@ -60,8 +58,11 @@ img{
     border-radius: 10px;
 }
 
-
-
+@media screen and (max-width: 900px){
+    .aproposdivimg img{
+        width: 30%;
+    }
+}
 @media screen and (max-width: 800px){
     iframe {
         width: 90%;

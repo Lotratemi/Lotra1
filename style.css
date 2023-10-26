@@ -56,11 +56,13 @@ header{
     vertical-align: auto;
 }
 
+
 /* Style pour le bouton au survol */
 .search-menu button:hover {
     background-color: #555;
     cursor: pointer;
 }
+
 .login-button {
     padding: 10px 20px;
     font-size: 2rem;
@@ -114,6 +116,14 @@ nav li {
 nav a {
     text-decoration: none; /* Supprime la soulignement par défaut */
     color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    display: inline-block;
+    position: relative;
+}
+.activenav{
+    text-decoration: none; /* Supprime la soulignement par défaut */
+    color: rgb(234, 215, 2);
+    font-weight: bold;
     padding: 10px 10px;
     display: inline-block;
     position: relative;
@@ -178,6 +188,47 @@ nav a:hover::before {
 }
 
 
+.conteneur {
+    position: relative;
+}
+  
+.conteneurimg {
+    position: absolute;
+    width: 11%;
+    margin-left: 2%;
+    border-radius: 15px;
+    animation: moveUpDown 4s linear infinite; /* Réglez la durée de l'animation et les propriétés d'animation */
+}
+.conteneurimg:hover {
+    width: 13%;
+    margin-left: 1%;
+    opacity: 0.8;
+}
+.conteneur2 {
+    position: relative;
+}
+  
+.conteneurimg2 {
+    position: absolute;
+    width: 11%;
+    margin-left: 88%;
+    border-radius: 15px;
+    animation: moveUpDown 4s linear infinite; /* Réglez la durée de l'animation et les propriétés d'animation */
+}
+.conteneurimg2:hover {
+    width: 12%;
+    margin-left: 87.5%;
+    opacity: 0.8;
+}  
+
+@keyframes moveUpDown {
+    0%, 100% {
+      top: 80px; /* Position initiale */
+    }
+    50% {
+      top: 200px; /* Position la plus basse */
+    }
+}
 
 main{
     background-image: url(/assets-images/fonds/fond_index.jpg);
@@ -392,11 +443,16 @@ section h2{
 /* Mise en forme du footer */
 footer {
     display: flex;
-    justify-content: space-around;
     color: white;
+    justify-content: space-around;
     padding: 2rem;
     background: linear-gradient(90deg, #010749, #2e6abf);
     border-top: 2px solid black;
+}
+.activefooter{
+    color: rgb(234, 215, 2);
+    font-weight: bold;
+    text-decoration: none;
 }
 footer a {
     color: white;
@@ -405,8 +461,6 @@ footer a {
 footer a:hover{
     text-decoration: underline;
 }
-
-
 .infos-entreprises{
     display: flex;
     flex-direction: column;
@@ -418,7 +472,17 @@ footer a:hover{
 .social{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+}
+.social4{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr ;
     grid-template-rows: 0.5fr 1fr;
+}
+.social5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
 }
 .social1{
     grid-column-start: 1;
@@ -428,14 +492,31 @@ footer a:hover{
     grid-column-start: 1;
     grid-column-end: 6;
 }
+.social3{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
 .social img {
     padding: 5px;
     height: 40px;
 }
+.social5 img {
+    padding: 5px;
+    height: 40px;
+}
+.social4 img {
+    padding: 5px;
+    height: 60px;
+}
 .social img:hover{
     opacity: 0.7;
 }
-
+.social4 img:hover{
+    opacity: 0.7;
+}
+.social5 img:hover{
+    opacity: 0.7;
+}
 .indexiframe{
     padding-left: 5%;
 }
@@ -461,6 +542,12 @@ footer a:hover{
     .social img{
         height: 30px;
     }
+    .social4 img{
+        height: 40px;
+    }
+    .social5 img{
+        height: 30px;
+    }
 }
 @media screen and (max-width: 1150px){
     .sort-links select {
@@ -473,6 +560,19 @@ footer a:hover{
     }
     .brand-dropdown {
         font-size: 70%;
+    }
+    .search-bar {
+        font-size: 70%;
+        margin-left: -100%;
+    }
+    .search-button {
+        padding: 5px 10px;
+    }
+    .search-button img {
+        width: 20px;
+        height: 21px;
+        padding: 0;
+        vertical-align: auto;
     }
 }
 @media screen and (max-width: 1000px){
@@ -546,7 +646,7 @@ footer a:hover{
     .brand-dropdown {
         padding: 5%;
         font-size: 40%;
-        margin-left: -230%;
+        margin-left: -300%;
         margin-right: 200%;
     }
     .search-bar {
@@ -590,13 +690,21 @@ footer a:hover{
         font-size: smaller;
 
     }
-    .brand-dropdown {
-        padding: 5%;
-        font-size: 40%;
-        margin-left: -400%;
-        margin-right: 300%;
-    }
     .search-bar {
         margin-left: -280%;
     }
+    .search-bar {
+        font-size: 50%;
+        margin-left: -130%;
+    }
+    .search-button {
+        padding: 5px 10px;
+    }
+    .search-button img {
+        width: 16px;
+        height: 18px;
+        padding: 0;
+        vertical-align: auto;
+    }
 }
+

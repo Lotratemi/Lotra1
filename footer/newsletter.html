@@ -14,9 +14,44 @@
         <div class="header-font">
             <img class="logo" src="/assets-images/logo.jpg" title="Logo de l'entreprise Sanderolls" alt="Logo de l'entreprise Sanderolls">
         </div>
-        <div class="search-menu">
-            <input type="text" placeholder="Rechercher...">
-            <button>Rechercher</button>
+        <div class="search-container">
+            <div class="brand-dropdown2">
+                <select class="brand-dropdown">
+                    <option value="all">Tous nos véhicules</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Dacia">Dacia</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                    <option value="Lotus">Lotus</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Rolls-Royce">Rolls-Royce</option>
+                    <option value="Motos">Motos</option>
+                    <option value="Voitures de collection">Voitures de collection</option>
+                </select>
+                <select class="brand-dropdown">
+                    <option value="all">Carburant</option>
+                    <option value="Essence">Essence</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Électrique">Électrique</option>
+                </select>
+                <select class="brand-dropdown">
+                    <option value="all">Cartégorie</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Limousine">Limousine</option>
+                    <option value="Berline">Berline</option>
+                    <option value="Coupé">Coupé</option>
+                    <option value="Cabriolet">Cabriolet</option>
+                    <option value="Citadine">Citadine</option>
+                    <option value="SuperCar">SuperCar</option>
+                    <option value="4x4">4x4</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Collection">Collection</option>
+                </select>
+            </div>
+            <input type="text" class="search-bar" placeholder="Rechercher...">
+            <button class="search-button">
+                <img src="/assets-images/icons/Loupe.png" alt="Rechercher">
+            </button>
         </div>
         <div>
             <button class="login-button">
@@ -29,14 +64,14 @@
     </header>
     <nav>
         <ul>
-            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/index.html" >Accueil</a></li>
             <li class="dropdown">
                 <a href="#">Financement</a>
                 <ul class="dropdown-content">
                   <li><a href="/Financement/presentation.html">Présentation générale</a></li>
-                  <li><a href="/Financement/credit.html">Crédit</a></li>
+                  <li><a href="/Financement/credit.html" >Crédit</a></li>
                   <li><a href="/Financement/LOA.html">Location avec Option d'Achat</a></li>
-                  <li><a href="/Financement/lld.html">Location Longue Durée</a></li>
+                  <li><a href="/Financement/lld.html" >Location Longue Durée</a></li>
                 </ul>
             </li> 
             <li class="dropdown">
@@ -51,7 +86,7 @@
               </ul>
             </li>  
             <li><a href="/Nouveautes/nouveautes.html">Nouveautés</a></li>
-            <li><a href="/BonsPlans/bonsplans.html">Bons plans</a></li>
+            <li><a href="/BonsPlans/bonsplans.html" >Bons plans</a></li>
         </ul>
     </nav>
     <main>
@@ -66,12 +101,10 @@
             <a href="/footer/contact.html">Contact</a>
             <a href="/avis-clients.html">Avis clients</a>
             <a href="/footer/faq.html">FAQ</a>
-            <a href="/footer/newsletter.html">Newsletter</a>
+            <a href="/footer/newsletter.html" class="activefooter">Newsletter</a>
         </div>
         <div class="social">
-            <div class="social1">
-                Suivez nous sur : 
-            </div>
+            <div class="social1">Suivez nous sur:</div>
             <div>
                 <a href="https://www.facebook.com/"><img src="/assets-images/icons/facebook.svg" title="Logo Facebook" alt="Logo Facebook"></a>
             </div>
@@ -86,11 +119,11 @@
             </div>
             <div>
                 <a href="https://www.linkedin.com/"><img src="/assets-images/icons/linkedin.svg" title="Logo LinkedIn" alt="Logo LinkedIn"></a>
-             </div>  
+            </div>  
         </div>
-        <div class="social">
-            <div class="social1">
-                Télécharger notre application : 
+        <div class="social5">
+            <div class="social2">
+                Télécharger notre application: 
             </div>
             <div>
                 <a href="https://play.google.com/store/apps?hl=fr&gl=US&pli=1"><img src="/assets-images/icons/Google_Play_Store_badge_EN.svg.png" title="Logo Play Store" alt="Logo Play Store"></a>
@@ -101,8 +134,16 @@
             <div>
                 <a href="https://www.google.com/"><img src="/assets-images/icons/QR_Code_example.png" title="Logo QR Code" alt="Logo QR Code"></a>
             </div>
-        <div>
-            &copy; Walid, Philippe, Robin   
+        </div>
+        <div class="social4">
+            <div class="social3">
+                <a href="https://fr.trustpilot.com/"><img src="/assets-images/AVIS CLIENTS/Capture d’écran 2023-10-25 à 09.43.51.png" title="Logo Trustpilot" alt="Logo Trustpilot"></a>
+            </div>
+            <div>
+                &copy; SandéRolls, tous droits réservés <br>
+                Dernière mise à jour du site internet le: <br>
+                26/10/2023
+            </div>
         </div>
     </footer>
     <script src="/script.js"></script>
