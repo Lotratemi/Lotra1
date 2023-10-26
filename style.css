@@ -372,6 +372,14 @@ section h2{
     right: 0;
 }
 
+#prevBtnBottom {
+    left: 0;
+}
+
+#nextBtnBottom {
+    right: 0;
+}
+
 .pagination{
     display: flex;
     flex-direction: row;
