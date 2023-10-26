@@ -41,6 +41,7 @@ h2{
     margin-left: 5%;
 } 
 
+
 @keyframes moveUpDown2 {
     0%, 100% {
       top: 20px; /* Position initiale */

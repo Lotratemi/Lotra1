@@ -1,0 +1,7 @@
+main{
+    background-image: url(/assets-images/fonds/fonda.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
