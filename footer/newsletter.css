@@ -1,13 +1,18 @@
+main_without_background {
+    background-color: white;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
     margin: 0;
     padding: 0;
     justify-content: center;
+    margin: 0%;
 }
 
 header {
-    background-color: #333;
+    background-color:lightblue;
     color: #fff;
     text-align: center;
     padding: 30px;
@@ -55,9 +60,30 @@ button:hover {
     background-color: #555;
 }
 
+.grid-container {
+    display: grid;
+    place-items: center;
+    width: 30%;
+    height: 30%;
+    padding: 0%;
+    margin: 0%;
+}
+
 .medium-image {
     display: flex;
     width: 50vh;
     align-items: center;
+}
 
+body h1 {
+    display: flex;
+    text-align: center;
+}
+
+.article_left {
+    display:grid;
+    text-align: left;
+    margin: 10%;
+    border:10px;
+    background-color: rgba(0, 0, 255, 0.057);
 }
