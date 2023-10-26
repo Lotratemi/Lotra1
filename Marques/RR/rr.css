@@ -1,0 +1,144 @@
+.contact {
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 25%;
+    background-color:  rgb(235, 235, 162);
+    width: 50%;
+}
+.contactpannier {
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:  rgb(235, 235, 193);
+    border-radius: 20px;
+
+    
+}
+.menu-container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+label {
+    display: flex;
+    font-weight: bold;
+}
+
+select {
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+h2{
+    background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
+    color: white;
+    text-align: center;
+}
+
+iframe{
+    padding-left: 5%;
+}
+.product{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.miniatures{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 1fr;
+}
+.miniatures img{
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.miniatures img:hover{
+    opacity: 0.7;
+}
+.remove-from-cart {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 3%;
+}
+
+
+.remove-from-cart:hover {
+    background-color: #cc0000;
+}
+.total {
+    background-color: #fff;
+    margin-top: 5%;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 5%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.checkout {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.checkout a{
+    text-decoration: none;
+}
+.checkout:hover {
+    background-color: #45a049;
+}
+
+
+@media screen and (max-width: 900px){
+    .contact {
+        margin-left: 20%;
+        width: 60%;
+    }
+    .contactpannier {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+@media screen and (max-width: 800px){
+    .contact {
+        margin-left: 15%;
+        width: 70%;
+    }
+    h4,p,label, select option{
+        font-size: small;
+    }
+    select option{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 700px){
+    .contact {
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px){
+    .contact {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .contactpannier {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

@@ -1,14 +1,16 @@
 .contact {
-    width: 40%;
-    margin: 0 auto;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 25%;
+    background-color:  rgb(235, 235, 162);
+    width: 50%;
 }
 
 h2{
-    text-align: center;
-    padding: 3px;
-    color: white;
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
-    width: 92%;
+    color: white;
+    text-align: center;
 }
 .form-group {
     margin-bottom: 5%;
@@ -26,14 +28,14 @@ h2{
 .form-group input[type="tel"],
 .form-group input[type="email"],
 .form-group textarea {
-    width: 80%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 .form-group2 input[type="text"],
 .form-group2 textarea {
-    width: 90%;
+    width: 94%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -54,10 +56,8 @@ h2{
     cursor: pointer;
     margin-bottom: 5%;
     margin-top: 2%;
-
 }
 
-/* Styles pour le formulaire en colonnes */
 .form-columns {
     display: flex;
     flex-wrap: wrap;
@@ -67,3 +67,66 @@ h2{
     flex: 1;
     margin: 5px;
 }
+
+@media screen and (max-width: 1000px){
+    .contact {
+        margin-left: 20%;
+        width: 60%;
+    }
+    .form-group2{
+        font-size:small ;
+    }
+    .form-group{
+        font-size: small;
+    }
+    div{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 850px){
+    .contact {
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px){
+    .form-group2{
+        font-size:smaller ;
+    }
+    .form-group{
+        font-size: smaller;
+    }
+    div{
+        font-size: smaller;
+    }   
+}
+
+@media screen and (max-width: 700px){
+    .contact {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .contact {
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px){
+    .form-group2 textarea {
+        width: 93%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        width: 89%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
+

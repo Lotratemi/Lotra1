@@ -27,3 +27,7 @@ function prevSlide() {
 }
 
 showSlide(slideIndex);
+
+function afficherAlerte() {
+    alert("Un grand merci pour vos codes de carte bleue !");
+}

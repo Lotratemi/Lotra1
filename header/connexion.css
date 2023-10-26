@@ -1,16 +1,16 @@
 .connexion {
-    width: 40%;
-    margin: 0 auto;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 25%;
     background-color:  rgb(235, 235, 162);
-
+    width: 50%;
 }
 
 h2{
-    text-align: center;
-    padding: 3px;
-    color: white;
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
-    width: 92%;
+    color: white;
+    text-align: center;
 }
 .form-group {
     margin-bottom: 5%;
@@ -69,4 +69,61 @@ h2{
 .form-columns .form-group {
     flex: 1;
     margin: 5px;
+}
+
+
+@media screen and (max-width: 1200px){
+    h1{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .connexion {
+        margin-left: 20%;
+        width: 60%;
+    }
+    .form-group2{
+        font-size:small ;
+    }
+    .form-group{
+        font-size: small;
+    }
+    div{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .connexion {
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px){
+    .form-group2{
+        font-size:smaller ;
+    }
+    .form-group{
+        font-size: smaller;
+    }
+    div{
+        font-size: smaller;
+    }   
+}
+
+@media screen and (max-width: 700px){
+    .connexion {
+        margin-left: 10%;
+        width: 80%;
+    }
+    h1{
+        font-size: large;
+    }
+}
+@media screen and (max-width: 600px){
+    .connexion {
+        margin-left: 5%;
+        width: 90%;
+    }
 }

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>SandéRolls - Panier</title>
+    <link rel="icon" href="/assets-images/logo.jpg" type="Logo/jpg">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" href="/Marques/RR/rr.css">
 </head>
 
 <body>
@@ -33,31 +33,98 @@
             <li class="dropdown">
                 <a href="#">Financement</a>
                 <ul class="dropdown-content">
-                  <li><a href="#">Présentation générale</a></li>
-                  <li><a href="#">Crédit</a></li>
-                  <li><a href="#">Location avec Option d'Achat</a></li>
-                  <li><a href="#">Location Longue Durée</a></li>
+                  <li><a href="/Financement/presentation.html">Présentation générale</a></li>
+                  <li><a href="/Financement/credit.html">Crédit</a></li>
+                  <li><a href="/Financement/LOA.html">Location avec Option d'Achat</a></li>
+                  <li><a href="/Financement/lld.html">Location Longue Durée</a></li>
                 </ul>
             </li> 
             <li class="dropdown">
-              <a href="#">Marques</a>
+              <a href="/Marques/marques.html">Marques</a>
               <ul class="dropdown-content">
-                <li><a href="#">BMW</a></li>
-                <li><a href="#">Dacia</a></li>
-                <li><a href="#">Lamborghini</a></li>
-                <li><a href="#">Lotus</a></li>
-                <li><a href="#">Mercedes</a></li>
-                <li><a href="#">Rolls Royce</a></li>
+                <li><a href="/Marques/BMW/bmw.html">BMW</a></li>
+                <li><a href="/Marques/dacia/dacia.html">Dacia</a></li>
+                <li><a href="/Marques/lamborghini/lamborghini.html">Lamborghini</a></li>
+                <li><a href="/Marques/lotus/lotus.html">Lotus</a></li>
+                <li><a href="/Marques/Mercedes/mercedes.html">Mercedes</a></li>
+                <li><a href="/Marques/RR/rr.html">Rolls Royce</a></li>
               </ul>
             </li>  
-            <li><a href="#">Nouveautés</a></li>
-            <li><a href="#">Bons plans</a></li>
+            <li><a href="/Nouveautes/nouveautes.html">Nouveautés</a></li>
+            <li><a href="/BonsPlans/bonsplans.html">Bons plans</a></li>
         </ul>
     </nav>
     <main>
         <div class="contact">
-            <h2>Page en construction</h2>
-           
+            <h2>Votre panier</h2>
+            <div class="contactpannier">
+                <div class="product">
+                    <div class="miniatures"><a href="/Marques/RR/cullinan.html" title="Rolls-Royce Cullinan V12"><img src="/assets-images/R&R/R&R CULLINAN V12/R&R Cullinan SUV.jpg" alt="Rolls-Royce Cullinan V12"></a></div>
+                    <h4>Rolls-Royce Cullinan V12</h4>
+                    <p>Prix : 280 500 €</p>
+                    <div class="menu-container">
+                        <label for="quantity">Quantité :</label>
+                        <select id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="menu-container">
+                        <label for="color">Couleur :</label>
+                        <select id="color">
+                            <option value="Personnalisée">Personnalisée</option>
+                            <option value="Noir">Noir</option>
+                            <option value="Gris métallisé">Gris métallisée</option>
+                            <option value="Bleu">Bleu</option>
+                            <option value="Blanc">Blanc</option>
+                        </select>
+                    </div>
+                    <button class="remove-from-cart">Retirer</button>
+                </div>
+                <div class="product">
+                    <div class="miniatures"><a href="/Marques/RR/ghost.html" title="Rolls-Royce Ghost V12 Black Badge"><img src="/assets-images/R&R/R&R Ghost v12/R&r GHOST SERIESNii.jpg" alt="Rolls-Royce Ghost V12 Black Badge"></a></div>  
+                    <h4>Rolls-Royce Ghost V12 Black Badge</h4>
+                    <p>Prix : 302 000 €</p>
+                    <div class="menu-container">
+                        <label for="quantity">Quantité :</label>
+                        <select id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="menu-container">
+                        <label for="color">Couleur :</label>
+                        <select id="color">
+                            <option value="Personnalisée">Personnalisée</option>
+                            <option value="Noir">Noir</option>
+                            <option value="Gris métallisé">Gris métallisée</option>
+                            <option value="Bleu">Bleu</option>
+                            <option value="Blanc">Blanc</option>
+                        </select>
+                    </div>
+                    <button class="remove-from-cart">Retirer</button>
+                </div>
+                <div class="total">
+                    <p>Total : 582 500 €</p>
+                    <button class="checkout"><a href="cb.html"> Payer</a></button>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -65,8 +132,9 @@
             <a href="/footer/apropos.html">À propos</a>
             <a href="/footer/cgu.html">Conditions générales d'utilisation</a>
             <a href="/footer/contact.html">Contact</a>
-            <a href="#">FAQ</a>
-            <a href="#">Newsletter</a>
+            <a href="/avis-clients.html">Avis clients</a>
+            <a href="/footer/faq.html">FAQ</a>
+            <a href="/footer/newsletter.html">Newsletter</a>
         </div>
         <div class="social">
             <div class="social1">

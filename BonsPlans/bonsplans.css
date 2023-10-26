@@ -1,0 +1,44 @@
+h2{
+    background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
+    color: white;
+    text-align: center;
+}
+.argent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.argent div{
+    padding: 1%;
+    text-align: justify;
+    
+}
+.argent img{
+    width: 90%;
+    
+}
+.argent img:hover{
+    opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .argent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .argent div{
+        font-size: small;
+    }
+    .argent img{
+        width: 50%;
+        margin-left: 25%;
+        
+    }
+}
+
