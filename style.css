@@ -221,6 +221,38 @@ nav a:hover::before {
     opacity: 0.8;
 }  
 
+.conteneur3 {
+    position: relative;
+}
+  
+.conteneurimg3 {
+    position: absolute;
+    width: 11%;
+    margin-left: 83%;
+    border-radius: 15px;
+    animation: moveUpDown 4s linear infinite; /* Réglez la durée de l'animation et les propriétés d'animation */
+}
+.conteneurimg3:hover {
+    width: 12%;
+    margin-left: 82.5%;
+    opacity: 0.8;
+}  
+.conteneur4 {
+    position: relative;
+}
+  
+.conteneurimg4 {
+    position: absolute;
+    width: 11%;
+    margin-left: 6%;
+    border-radius: 15px;
+    animation: moveUpDown 4s linear infinite; /* Réglez la durée de l'animation et les propriétés d'animation */
+}
+.conteneurimg4:hover {
+    width: 13%;
+    margin-left: 5.5%;
+    opacity: 0.8;
+}
 @keyframes moveUpDown {
     0%, 100% {
       top: 80px; /* Position initiale */
@@ -229,7 +261,23 @@ nav a:hover::before {
       top: 200px; /* Position la plus basse */
     }
 }
-
+.image-container {
+    position: relative;
+    border-radius: 30px;
+    width: 5rem; 
+    margin-right: 3%;
+    overflow: hidden;
+}
+  
+.hover-image {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s; 
+}
+  
+.hover-image:hover {
+    content: url('/assets-images/Halloween/c2.png'); 
+}
 main{
     background-image: url(/assets-images/fonds/fond_index.jpg);
     background-attachment: fixed;

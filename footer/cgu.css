@@ -37,6 +37,10 @@
 }
 
 @media screen and (max-width: 650px){
+    .cgu {
+        margin-left: 10%;
+        width: 80%;
+    }
     p, h3, h4, h5{
         font-size: 80%;
     }

@@ -12,9 +12,15 @@ header {
 }
 
 main {
+    background-color: #000000;
+
     padding: 20px;
 }
+.carousel{
+    text-align: center;
+    color: #cd510e;
 
+}
 .promotion {
     background-color: #ff6600;
     padding: 20px;
