@@ -47,7 +47,22 @@ h2{
       top: 20px; /* Position initiale */
     }
     50% {
-      top: 80px; /* Position la plus basse */
+      top: 60px; /* Position la plus basse */
+    }
+}
+
+@media screen and (max-width: 1150px){
+    @keyframes moveUpDown2 {
+        0%, 100% {
+          top: 15px; /* Position initiale */
+        }
+        50% {
+          top: 30px; /* Position la plus basse */
+        }
+    }
+    .conteneurimgbp {
+        
+        animation: moveUpDown2 2s linear infinite; /* Réglez la durée de l'animation et les propriétés d'animation */
     }
 }
 @media screen and (max-width: 800px){
@@ -67,4 +82,23 @@ h2{
         
     }
 }
-
+@media screen and (max-width: 750px){
+    @keyframes moveUpDown2 {
+        0%, 100% {
+          top: 10px; /* Position initiale */
+        }
+        50% {
+          top: 20px; /* Position la plus basse */
+        }
+    }   
+}
+@media screen and (max-width: 500px){
+    @keyframes moveUpDown2 {
+        0%, 100% {
+          top: 5px; /* Position initiale */
+        }
+        50% {
+          top: 13px; /* Position la plus basse */
+        }
+    }   
+}

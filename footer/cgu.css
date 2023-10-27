@@ -1,6 +1,5 @@
-.cgu {
-    display: flex;
-    flex-direction: column;
+.accordion{
+    margin: 0 auto;
     text-align: justify;
     padding: 1%;
     margin-top: 1%;
@@ -9,35 +8,38 @@
     background-color:  rgb(235, 235, 162);
     width: 70%;
 }
-.cgu h3 {
-    text-align: center;
-    padding: 3px;
-    color: white;
-    background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
-    width: 99%;
+.section {
+    margin-bottom: 10px;
+    cursor: pointer;
 }
-.cgu h4 {
+.title {
     text-align: center;
     padding: 5px;
     color: white;
     background: linear-gradient(180deg, rgb(103, 103, 103), rgb(29, 29, 29));
-    width: 98.5%;
+    width: 50%;
+    margin-left: 25%;
 }
-
-.cgu h5 {
+.content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.accordion h5 {
     text-align: center;
     padding: 3px;
     color: white;
     background: linear-gradient(180deg, rgb(169, 169, 169), rgb(83, 83, 83));
     width: 50%;
 }
-.cgu p{
+.accordion p{
     padding-left: 10px;
     padding-right: 10px;
 }
 
+
 @media screen and (max-width: 650px){
-    .cgu {
+    .accordion {
         margin-left: 10%;
         width: 80%;
     }

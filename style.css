@@ -255,10 +255,10 @@ nav a:hover::before {
 }
 @keyframes moveUpDown {
     0%, 100% {
-      top: 80px; /* Position initiale */
+      top: 200px; /* Position initiale */
     }
     50% {
-      top: 200px; /* Position la plus basse */
+      top: 280px; /* Position la plus basse */
     }
 }
 .image-container {
@@ -422,7 +422,7 @@ section h2{
     margin-top: 2%;
     border-radius: 20px;
     border: 2px solid black;
-    opacity: 0.8;
+    opacity: 0.95;
     margin-bottom: 2%;
 }
 
@@ -585,6 +585,85 @@ footer a:hover{
     margin-left: 5%;
     margin-top: 2%;
     border-radius: 10px;
+}
+
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    12.5% {
+        opacity: 0.25;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    37.5% {
+        opacity: 0.75;
+    } 
+    50% {
+      opacity: 1;
+    }
+    62.5% {
+        opacity: 0.75;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    87.5% {
+        opacity: 0.25;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+  
+.element-a-animer {
+    animation: fadeInOut 2s ease-in-out infinite;
+    position: absolute;
+    width: 11%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.element-a-animer:hover {
+    width: 12%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    opacity: 0.9;
+}
+.element-a-animerb {
+    animation: fadeInOut 2s ease-in-out infinite;
+    position: absolute;
+    width: 11%;
+    margin-left: 88%;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.element-a-animerb:hover {
+    width: 12%;
+    margin-left: 87.5%;
+    margin-top: 2%;
+    opacity: 0.9;
+}
+@media screen and (min-width: 800px){
+    .avisclients img{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 20px;
+        border: 1px solid rgb(251, 188, 0);
+    
+    }
+    .avisclientsC img{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .avisclientsC .body-carousel{
+        width: 60%;
+        margin-left: 20%;
+    }
 }
 @media screen and (max-width: 1400px){
     .social img{
