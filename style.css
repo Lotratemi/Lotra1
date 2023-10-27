@@ -723,6 +723,14 @@ footer a:hover{
     
 }
 @media screen and (max-width: 800px){
+    @keyframes moveUpDown {
+        0%, 100% {
+          top: 100px; /* Position initiale */
+        }
+        50% {
+          top: 180px; /* Position la plus basse */
+        }
+    }
     .brand-dropdown {
         padding: 5%;
         font-size: 40%;
